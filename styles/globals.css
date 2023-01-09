@@ -1,8 +1,27 @@
+@font-face {
+    font-family: regular_smooch_sans;
+    src: url('../assets/font/SmoochSans-Regular.ttf');
+}
+
 * {
     box-sizing: border-box;
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: regular_smooch_sans;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
