@@ -1,11 +1,39 @@
 
-.navbar-container {
-    padding: 1rem ;
+.app__navbar {
+    left: 0;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-.navbar-container ul {
-    display: flex;
+
+.app__navbar-container {
     align-items: center;
+    background-color: rgb(196, 166, 90);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+.app__navbar-container__links {
+    flex: 1;
+}
+.app__navbar-container__links ul {
+    align-items: center;
+    display: flex;
+    gap: 2rem 4rem;
     justify-content: center;
     width: 100%;
-    gap: 2rem;
+}
+
+.app__navbar-container__links ul a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.app__navbar-container__button a {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    color: #000000;
+    padding: 0.5rem 1rem;
 }

@@ -1,11 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 export default function Layout({ children }){
     return (
         <>
             <Navbar />
-            { children }
+            <main className="app__layout-main">
+                { children }
+            </main>
         </>
     )
 }

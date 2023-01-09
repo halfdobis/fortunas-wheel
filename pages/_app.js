@@ -1,7 +1,8 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import Layout from '../containers/Layout';
+import '../styles/layout.css';
 import '../styles/navbar.css';
-
-import Layout from '../components/Layout'
+import '../styles/header.css';
 
 export default function App({ Component, pageProps }) {
   return (
