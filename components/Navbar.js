@@ -7,9 +7,7 @@ const Menu = () => {
       <li><Link href="/"> Home </Link></li>
       <li><Link href="/about"> About </Link></li>
       <li><Link href="/rules"> Rules </Link></li>
-      <li><Link href="/guardian"> Guaridan </Link></li>
       <li><Link href="/how-it-works"> How It Works </Link></li>
-      <li><Link href="/divine-draw"> Divine Draw </Link></li>
     </ul>
   )
 }
@@ -26,7 +24,7 @@ export default function Navbar() {
           <Menu />
         </div>
         <div className="app__navbar-container__button">
-          <Link href="/"> Play now </Link>
+          <Link href="/"> Connect Wallet </Link>
         </div>
       </div>
     </navbar>
