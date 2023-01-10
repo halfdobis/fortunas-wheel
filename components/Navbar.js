@@ -4,7 +4,6 @@ import Link from 'next/link';
 const Menu = () => {
   return  (
     <ul>
-      <li><Link href="/"> Home </Link></li>
       <li><Link href="/about"> About </Link></li>
       <li><Link href="/rules"> Rules </Link></li>
       <li><Link href="/how-it-works"> How It Works </Link></li>
