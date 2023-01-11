@@ -1,0 +1,29 @@
+.app__rules {
+    padding: 2rem 4rem 2rem;
+}
+
+.app__rules-container__field {
+    margin-bottom: 1.5rem;
+}
+.app__rules-container__header h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.app__rules-container__field p {
+    color: #faf8f8;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.app__rules-container__button button {
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    padding: 1rem 3rem;
+}

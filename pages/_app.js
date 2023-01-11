@@ -3,6 +3,8 @@ import Layout from '../containers/Layout';
 import '../styles/layout.css';
 import '../styles/navbar.css';
 import '../styles/header.css';
+import '../styles/guardian.css';
+import '../styles/rules.css';
 import '../styles/faq.css';
 import '../styles/acordion.css';
 
