@@ -1,12 +1,13 @@
 
 .app__faq {
+    /* background-color: #3b4053; */
+    padding: 4rem 4rem 0;
     background-color: #1A1D24;
 }
 
 .app__faq-container {
-    margin: auto;
-    max-width: 824px;
-    padding: 4rem 0;
+    width: 100%;
+    padding-bottom: 4rem;
 }
 
 .app__faq-container__heading h1{
@@ -15,22 +16,19 @@
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 1rem;
-    text-align: center;
 }
 .app__faq-container__heading p {
     color: #fff;
     font-family: inherit;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 
 @media screen and (max-width: 824px) {
-    .app__faq-container {
-        max-width: 100%;
-        padding: 2rem;
+    .app__faq {
+        padding: 3rem 1.5rem 0;
     }
 }
 
@@ -40,6 +38,6 @@
         margin-bottom: 0.5rem;
     }
     .app__faq-container__heading p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
