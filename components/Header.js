@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 
 import hero_image from '../assets/images/Fortuna.PNG';
-import solsea_logo from '../assets/images/SolSea_Logo1.png';
 
 import { FiInstagram, FiTwitter, FiDisc } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
@@ -17,7 +16,7 @@ function Header() {
                 </div>
             </div>
             <div className="app__header-container__text">
-                <h2> Discover Rare Digital Guardiand & Collect FORTUNA NFT </h2>
+                <h2> WELCOME TO FORTUNA'S REALM </h2>
             </div>
         </div>
         <div className="app__header-socials">

@@ -21,7 +21,7 @@
 .app__navbar-container__links ul {
     align-items: center;
     display: flex;
-    gap: 2rem 4rem;
+    gap: 2rem 2rem;
     justify-content: center;
     width: 100%;
 }
