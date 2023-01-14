@@ -1,0 +1,97 @@
+.app__howtoplay {
+    padding: 2rem 4rem 2rem;
+}
+
+.app__howtoplay-container__header {
+    text-align: center;
+}
+
+.app__howtoplay-container__header h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.app__howtoplay-container__header p {
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.app__howtoplay-container__content {
+    display: grid;
+    gap: 1rem 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.app__howtoplay-card__container {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    position: relative;
+}
+
+.app__howtoplay-card__container-step {
+    align-items: center;
+    background-color: rgb(196, 166, 90);
+    background-color: #3b4053;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 64px;
+    justify-content: center;
+    left: 0;
+    margin-left: -32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+}
+
+.app__howtoplay-card__container h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: inherit;
+    margin-bottom: 1.2rem;
+}
+
+.app__howtoplay-card__container p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1.4rem;
+}
+
+
+@media screen and (max-width: 824px) {
+    .app__howtoplay {
+        padding: 3rem 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .app__howtoplay-card__container {
+        padding: 1rem 2.5rem;
+    }
+    .app__howtoplay-container__header h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .app__howtoplay-container__header p {
+        font-size: 1.1rem;
+    }
+
+    .app__howtoplay-container__content {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .app__howtoplay-card__container h3 {
+        font-size: 1.2rem;
+    }
+    .app__howtoplay-card__container p {
+        font-size: 0.8375rem;
+    }
+}

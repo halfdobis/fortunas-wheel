@@ -22,4 +22,4 @@ function Rules() {
   )
 }
 
-export default Rules
+export default Rules;
