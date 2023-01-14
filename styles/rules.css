@@ -27,3 +27,20 @@
     outline: none;
     padding: 1rem 3rem;
 }
+
+
+@media screen and (max-width: 824px) {
+    .app__rules {
+        padding: 3rem 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .app__rules-container__heading h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .app__rules-container__field p {
+        font-size: 1.1rem;
+    }
+}
