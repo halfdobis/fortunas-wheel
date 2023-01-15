@@ -1,27 +1,27 @@
 
 .app__faq {
-    /* background-color: #3b4053; */
-    padding: 4rem 25rem 0;
+    padding: 6rem 2rem 0;
     background-color: #1A1D24;
 }
 
 .app__faq-container {
-    width: 100%;
+    margin: auto;
+    max-width: 824px;
     padding-bottom: 4rem;
 }
 
 .app__faq-container__heading h1{
     color: #fff;
-    font-family: inherit;
+    font-family: var(--title);
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
 .app__faq-container__heading p {
     color: #fff;
-    font-family: inherit;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 
@@ -34,10 +34,10 @@
 
 @media screen and (max-width: 560px) {
     .app__faq-container__heading h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 0.5rem;
     }
     .app__faq-container__heading p {
-        font-size: 1.1rem;
+        font-size: .875rem;
     }
 }

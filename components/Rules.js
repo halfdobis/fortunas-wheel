@@ -2,7 +2,7 @@ import React from 'react'
 
 function Rules() {
   return (
-    <div className="app__rules">
+    <div className="app__rules section__container">
         <div className="app__rules-container">
             <div className="app__rules-container__header">
                 <h2> About the Fortuna Wheel Lottery </h2>
@@ -12,10 +12,6 @@ function Rules() {
             </div>
             <div className="app__rules-container__field">
                 <p> The remaining funds raised from ticket sales will be distributed as follows: 20% to marketing, 15% to development, 5% to the team, and the remaining 5% to be held in reserve. The use of a smart contract for the winner selection ensures transparency and fairness for all participants. The guardian NFTs can be purchased on the Solana chain and traded with ETH, with a loyalty bonus of 10% for traders. Players must agree to the terms and conditions of the event before participating. The event is open to players aged 18 and above. Players under the age of 18 are not eligible to participate. The event is void where prohibited by law..</p>
-            </div>
-
-            <div className="app__rules-container__button">
-                <button type="button"> Play now </button>
             </div>
         </div>
     </div>

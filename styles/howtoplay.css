@@ -1,5 +1,5 @@
 .app__howtoplay {
-    padding: 2rem 4rem 2rem;
+    padding: 6rem  2rem 4rem;
 }
 
 .app__howtoplay-container__header {
@@ -8,13 +8,14 @@
 
 .app__howtoplay-container__header h2 {
     color: #fff;
-    font-size: 2rem;
+    font-family: var(--title);
+    font-size: 3rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
 .app__howtoplay-container__header p {
     color: #fff;
-    font-family: inherit;
+    font-family: var(--subtitle);
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 2rem;
@@ -33,8 +34,7 @@
 
 .app__howtoplay-card__container-step {
     align-items: center;
-    background-color: rgb(196, 166, 90);
-    background-color: #3b4053;
+    background-color: #0C0813;
     border-radius: 50%;
     color: #fff;
     display: flex;
@@ -54,22 +54,28 @@
 .app__howtoplay-card__container h3 {
     font-size: 1.6rem;
     font-weight: 500;
-    font-family: inherit;
+    font-family: var(--title);
     margin-bottom: 1.2rem;
 }
 
 .app__howtoplay-card__container p {
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: inherit;
+    font-size: .875rem;
+    font-weight: 300;
+    font-family: var(--subtitle);
     line-height: 1.4rem;
 }
 
 
 @media screen and (max-width: 824px) {
     .app__howtoplay {
-        padding: 3rem 1.5rem 0;
+        padding: 3rem 1.5rem 2rem;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .app__howtoplay-container__content {
+        grid-template-columns: repeat(1,1fr);
+    }    
 }
 
 @media screen and (max-width: 560px) {
@@ -82,10 +88,6 @@
     }
     .app__howtoplay-container__header p {
         font-size: 1.1rem;
-    }
-
-    .app__howtoplay-container__content {
-        grid-template-columns: repeat(1,1fr);
     }
 
     .app__howtoplay-card__container h3 {

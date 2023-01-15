@@ -1,5 +1,5 @@
 .app__rules {
-    padding: 2rem 4rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .app__rules-container__field {
@@ -7,16 +7,18 @@
 }
 .app__rules-container__header h2 {
     color: #fff;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+    font-family: var(--title);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    text-align: center;
 }
 .app__rules-container__field p {
     color: #faf8f8;
-    font-family: inherit;
+    font-family: var(--subtitle);
     font-size: 1rem;
     line-height: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .app__rules-container__button button {
@@ -36,11 +38,14 @@
 }
 
 @media screen and (max-width: 560px) {
-    .app__rules-container__heading h1 {
+    .app__rules {
+        padding: 2rem 1rem;
+    }
+    .app__rules-container__header h2 {
         font-size: 2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
     }
     .app__rules-container__field p {
-        font-size: 1.1rem;
+        font-size: .875rem;
     }
 }

@@ -26,17 +26,17 @@
 
 .app__faq-acordion__title-box h3 {
     color: #fff;
-    font-family: inherit;
-    font-size: 1.2rem;
+    font-family: var(--title);
+    font-size: 1.5rem;
     font-weight: 500;
     margin-right: 1rem;
 }
 
 .app__faq-acordion__subtitle-box p {
-    font-family: inherit;
+    font-family: var(--subtitle);
     font-size: 0.875rem;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 svg, path {
@@ -72,7 +72,7 @@ svg, path {
 
   @media screen and (max-width: 560px) {
     .app__faq-acordion__title-box h3 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 0.5rem;
     }
     .app__faq-acordion__subtitle-box p {

@@ -1,0 +1,29 @@
+
+.app__footer {
+    padding: 4rem 2rem;
+}
+.app__footer-container p {
+    color: #fff;
+    font-family: var(--subtitle);
+    text-align: center;
+
+}
+.app__footer-container__social {
+    margin-bottom: 2rem;
+}
+
+.app__footer-container ul {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    justify-content: center;
+}
+
+
+.app__footer-container__social .app__icons svg {
+    color: #fff !important;
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+}

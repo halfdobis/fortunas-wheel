@@ -11,7 +11,7 @@ const Card = ({ stage, title, text }) => (
 
 function HowToPlay() {
   return (
-    <div className="app__howtoplay">
+    <div className="app__howtoplay section__container">
         <div className="app__howtoplay-container">
             <div className="app__howtoplay-container__header">
                 <h2> How to Play </h2>

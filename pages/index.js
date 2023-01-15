@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Header />
+      <Rules />
       <Guardians />
       <HowToPlay />
-      <Rules />
       <Faq />
     </>
   )
