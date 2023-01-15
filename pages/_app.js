@@ -8,6 +8,7 @@ import '../styles/howtoplay.css';
 import '../styles/rules.css';
 import '../styles/faq.css';
 import '../styles/acordion.css';
+import '../styles/footer.css';
 
 export default function App({ Component, pageProps }) {
   return (

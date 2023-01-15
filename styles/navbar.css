@@ -1,5 +1,7 @@
 
 .app__navbar {
+    background-color: inherit;
+    background-color: #0C0813;
     left: 0;
     height: 4rem;
     position: fixed;
@@ -10,24 +12,20 @@
 
 .app__navbar-container {
     align-items: center;
-    background-color: rgb(196, 166, 90);
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 3rem;
-}
-.app__navbar-container__links {
-    flex: 1;
 }
 .app__navbar-container__links ul {
     align-items: center;
     display: flex;
     gap: 2rem 2rem;
-    justify-content: center;
     width: 100%;
 }
 
 .app__navbar-container__links ul a {
     color: #fff;
+    font-family: var(--subtitle);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -37,4 +35,8 @@
     border-radius: 0.4rem;
     color: #000000;
     padding: 0.5rem 1rem;
+}
+.app__navbar-container__logo a {
+    color: #fff;
+    font-family: var(--subtitle);
 }

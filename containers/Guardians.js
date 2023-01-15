@@ -6,7 +6,7 @@ import { guardians } from '../data/guardian';
 
 function Guardians() {
   return (
-    <div className="app__guardians">
+    <div className="app__guardians section__container">
         <div className="app__guardians-container">
             <div className="app__guardians-container__textbox">
                 <h2> Become A Guardian </h2>

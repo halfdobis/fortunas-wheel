@@ -1,6 +1,8 @@
-@font-face {
-    font-family: regular_smooch_sans;
-    src: url('../assets/font/SmoochSans-Regular.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Poppins:wght@300;500;600&display=swap');
+:root {
+    --title: 'Iceland', cursive;
+    --subtitle: 'Poppins', sans-serif;
 }
 
 * {
@@ -17,12 +19,30 @@ html {
 }
 
 body {
-    font-family: regular_smooch_sans;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #3b4053;
+    background-color: #0C0813;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+}
+.section__container {
+    margin: auto;
+    max-width: 1024px;
+}
+
+@media screen and (max-width: 1023px) {
+    .section__container {
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 824px) {
+    .section__container {
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .section__container {
+        max-width: 100%;
+    }
 }

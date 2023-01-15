@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 export default function Layout({ children }){
@@ -8,6 +9,7 @@ export default function Layout({ children }){
             <main className="app__layout-main">
                 { children }
             </main>
+            <Footer />
         </>
     )
 }
