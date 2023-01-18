@@ -6,6 +6,7 @@ import hero_image from '../assets/images/Fortuna.PNG';
 function Header() {
   return (
     <header className="app__header">
+        <div className='app__header-overlay' />
         <div className="app__header-container">
             <div className='app__header-container__image-container'>
                 <div className="app__header-container__image">

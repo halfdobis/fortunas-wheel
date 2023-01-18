@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import logo from '../assets/images/Fortuna-Logo.jpg';
 
 const Menu = () => {
   return  (
@@ -11,13 +14,38 @@ const Menu = () => {
   )
 }
 
+
 export default function Navbar() {
-  const [ toggle_menu, set_toggle_menu ] = useState(false);
+  
+  useEffect(()=> {
+    const nav = document.querySelector(".app__navbar");
+    const header = document.querySelector(".app__header");
+
+    const observer = new IntersectionObserver((entries)=>{
+    const entry = entries[0];
+
+        window.addEventListener("scroll", ()=>{
+            if(entry.isIntersecting){
+                if(header.getBoundingClientRect().top < nav.offsetHeight) {
+                  nav.classList.remove("appear")
+                }
+            }
+            else {
+              nav.classList.add('appear')
+            }
+        });
+    });  
+
+    observer.observe(header);
+  }, []);
+
   return (
     <navbar className="app__navbar">
       <div className="app__navbar-container section__container">
         <div className="app__navbar-container__logo">
-          <Link href="/"> LOGO </Link>
+          <Link href="/">
+            <Image src={logo} alt="Fortuna NFT" width={48} height={48} />
+          </Link>
         </div>
         <div className="app__navbar-container__links">
           <Menu />
