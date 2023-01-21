@@ -9,9 +9,9 @@ function Header() {
         <div className='app__header-overlay' />
         <div className="app__header-container">
             <div className='app__header-container__image-container'>
-                <div className="app__header-container__image">
+                {/* <div className="app__header-container__image">
                     <Image src={hero_image} alt="Fortuna" layout="fill" objectFit="cover" />
-                </div>
+                </div> */}
             </div>
             <div className="app__header-container__text">
                 <h2> WELCOME TO FORTUNA'S REALM </h2>
