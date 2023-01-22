@@ -33,7 +33,7 @@ function Footer() {
                     </li>
                 </ul>
             </div>
-            <p> Copyright © 2023 Fortuna Wheel Lottery - All rights reserved </p>
+            <p> Copyright  &copy; {new Date().getFullYear()} Fortuna Wheel Lottery - All rights reserved </p>
         </div>
     </footer>
   )
