@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Guardian from '../components/Guardian';
 
 // guardians
@@ -16,6 +17,9 @@ function Guardians() {
                 { guardians.map((guardian, index) => (
                     <Guardian key={index} guardian={guardian} />
                 ))}
+            </div>
+            <div className="app__guardians-link__container">
+                <Link href="/guardian"> Become A Guardian </Link>
             </div>
         </div>
     </div>

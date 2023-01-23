@@ -1,5 +1,7 @@
 
 .app__footer {
+    flex-grow: 0;
+    flex-shrink: 0;
     padding: 4rem 2rem;
 }
 .app__footer-container p {
