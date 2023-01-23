@@ -6,7 +6,6 @@
     margin-bottom: 1.5rem;
 }
 .app__rules-container__header h2 {
-    color: #fff;
     font-family: var(--title);
     font-size: 2.5rem;
     font-weight: 600;
@@ -14,11 +13,13 @@
     text-align: center;
 }
 .app__rules-container__field p {
-    color: #faf8f8;
     font-family: var(--subtitle);
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 300;
+}
+.app__rules-container__field a {
+    color: #fff;
 }
 
 .app__rules-container__button button {
@@ -28,6 +29,27 @@
     font-weight: 500;
     outline: none;
     padding: 1rem 3rem;
+}
+
+.app__rules-container__link {
+    margin-top: 2rem;
+    text-align: center;
+}
+.app__rules-container__field a {
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--title);
+    outline: none;
+    padding: 1rem 2rem;
+    transition: all 250ms ease-in;
+}
+.app__rules-container__field a:hover {
+    background-color: #293040;
+    color: #fff;
 }
 
 

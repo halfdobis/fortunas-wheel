@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-import { AiFillInstagram } from 'react-icons/ai'
-import { FiTwitter, FiDisc } from 'react-icons/fi';
+import { FaTelegram } from 'react-icons/fa';
+import { FiTwitter } from 'react-icons/fi';
 import { SiDiscord } from 'react-icons/si';
 
 function Footer() {
@@ -13,17 +13,12 @@ function Footer() {
                 <ul className="app__footer-container__social-links">
                     <li className="app__icons">
                         <a href=""> 
-                            <AiFillInstagram />
+                            <FaTelegram />
                         </a>
                     </li>
                     <li className="app__icons">
                         <a href=""> 
                             <FiTwitter />
-                        </a>
-                    </li>
-                    <li className="app__icons">
-                        <a href=""> 
-                            <FiDisc />
                         </a>
                     </li>
                     <li className="app__icons">

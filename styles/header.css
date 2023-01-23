@@ -13,7 +13,7 @@
     width: 100%;
 }
 .app__header-overlay {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
     bottom: 0;
     left: 0;
     position: absolute;
@@ -26,7 +26,7 @@
 .app__header-container {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     height: 100%;
     padding: 4rem 4rem;
     z-index: 2;
@@ -46,6 +46,7 @@
 }
 
 .app__header-container__text {
+    text-align: center;
     flex: 1;
 }
 .app__header-container__text h2 {
@@ -54,4 +55,20 @@
     font-weight: 700;
     margin-bottom: 1rem;
     font-family: var(--title);
+}
+
+.app__header-container__text button {
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--title);
+    outline: none;
+    padding: 1rem 2rem;
+    transition: all 250ms ease-in;
+}
+.app__header-container__text button:hover {
+    background-color: #0C0813;
+    color: #fff;
 }

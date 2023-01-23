@@ -1,7 +1,10 @@
 
 .app__navbar {
     align-items: center;
+    background-color: inherit;
     display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
     height: 4rem;
     left: 0;
     position: fixed;

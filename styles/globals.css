@@ -11,15 +11,17 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: black;
 }
 
-html {
+html, #__next {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     background-color: #0C0813;
+    color: #fff;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
