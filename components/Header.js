@@ -7,7 +7,8 @@ function Header() {
         <div className="app__header-container">
             <div className="app__header-container__text">
                 <h2> WELCOME TO FORTUNA'S REALM </h2>
-                <button type="button"> Play Now </button>
+                <p> Play the Divine Draw, become a guardian, and let Fortuna's fortune shine on you. </p>
+                <a href="/divine-draw"> Play Now </a>
             </div>
         </div>
         <div className="app__header-socials">

@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 560px) {
     .app__rules {
-        padding: 2rem 1rem;
+        padding: 2rem 1.5rem;
     }
     .app__rules-container__header h2 {
         font-size: 2rem;
