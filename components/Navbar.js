@@ -1,43 +1,36 @@
 import React, { useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import logo from '../assets/images/Fortuna-Logo.jpg';
 
 const Menu = () => {
+  const { pathname } = useRouter();
   return  (
     <ul>
-      <li><Link href="/about"> About </Link></li>
-      <li><Link href="/rules"> Rules </Link></li>
-      <li><Link href="/how-it-works"> How It Works </Link></li>
+      <li><Link href="/" className={`${pathname === "/" && "app__navbar-link__active"}`}> Home </Link></li>
+      <li><Link href="/about" className={`${pathname === "/about" && "app__navbar-link__active"}`}> About </Link></li>
+      <li><Link href="/rules" className={`${pathname === "/rules" && "app__navbar-link__active"}`}> Rules </Link></li>
+      <li><Link href="/story" className={`${pathname === "/story" && "app__navbar-link__active"}`}> Story </Link></li>
+      <li><Link href="/how-it-works"  className={`${pathname === "/how-it-works" && "app__navbar-link__active"}`}> How It Works </Link></li>
     </ul>
   )
 }
 
 
 export default function Navbar() {
-  
+
   useEffect(()=> {
     const nav = document.querySelector(".app__navbar");
-    const header = document.querySelector(".app__header");
-
-    const observer = new IntersectionObserver((entries)=>{
-    const entry = entries[0];
-
-        window.addEventListener("scroll", ()=>{
-            if(entry.isIntersecting){
-                if(header.getBoundingClientRect().top < nav.offsetHeight) {
-                  nav.classList.remove("appear")
-                }
-            }
-            else {
-              nav.classList.add('appear')
-            }
-        });
-    });  
-
-    observer.observe(header);
-  }, []);
+    window.addEventListener("scroll", (e)=> {
+      if(window.scrollY >= 70){
+        nav.classList.add("appear");
+      } else {
+        nav.classList.remove("appear");
+      }
+    })
+  },[])
 
   return (
     <navbar className="app__navbar">

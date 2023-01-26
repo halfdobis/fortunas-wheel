@@ -48,3 +48,14 @@
     color: #fff;
     font-family: var(--subtitle);
 }
+
+.app__navbar-container__links ul a.app__navbar-link__active {
+    border-bottom: 2px solid #fff;
+    padding: 0 0 0.35rem;
+}
+
+@media screen and (max-width: 560px) {
+    .app__navbar-container__links ul {
+        display: none;
+    }
+}

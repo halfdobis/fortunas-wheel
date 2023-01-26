@@ -1,0 +1,45 @@
+.app__story {
+    padding: 4rem 2rem;
+}
+
+.app__story-container__field {
+    margin-bottom: 1.5rem;
+}
+.app__story-container__header h2 {
+    font-family: var(--title);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.app__story-container__field p {
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+.app__story-container__field video {
+    margin: auto;
+    width: 60%;
+    margin-left: 20%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 824px) {
+    .app__story {
+        padding: 3rem 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .app__story {
+        padding: 2rem 1.5rem;
+    }
+    .app__story-container__header h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .app__story-container__field p {
+        font-size: .875rem;
+    }
+}

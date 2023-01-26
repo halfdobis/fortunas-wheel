@@ -56,11 +56,19 @@
     margin-bottom: 1rem;
     font-family: var(--title);
 }
+.app__header-container__text p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: var(--subtitle);
+}
 
-.app__header-container__text button {
+.app__header-container__text a {
     background-color: #fff;
     border: none;
     border-radius: 2rem;
+    color: #000000;
     font-size: 1.4rem;
     font-weight: 600;
     font-family: var(--title);
@@ -68,7 +76,16 @@
     padding: 1rem 2rem;
     transition: all 250ms ease-in;
 }
-.app__header-container__text button:hover {
+.app__header-container__text a:hover {
     background-color: #0C0813;
     color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+    .app__header-container__text h2 {
+        font-size: 2.5rem;
+    }
+    .app__header-container__text p {
+        font-size: .825rem;
+    }
 }

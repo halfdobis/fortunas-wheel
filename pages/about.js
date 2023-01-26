@@ -8,10 +8,37 @@ export default function About() {
                 <h2> About the Fortuna Wheel Lottery </h2>
             </div>
             <div className="app__rules-container__field">
-                <p> To  participate in the event, players must purchase a lottery ticket for $50 during the sales period. Each ticket will be assigned a unique ticket number and the player's name will be recorded on the ticket. The sales period for tickets will run for one month, giving players ample time to purchase tickets and join the drawing. At the end of the sales period, a smart contract will randomly select 10 winners from all the ticket holders using a secure and transparent process. The winners will be announced and the smart contract will distribute 50% of the funds raised from ticket sales to them equally. The lottery also has 200 NFT holders, known as guardians, who are entitled to 20% of the funds from the ticket sales at the end of the drawing.</p>
+                <p> Fortuna's Divine Draw is a lottery event that is steeped in the mystical and ancient traditions of the great goddess Fortuna. According to legend, Fortuna was the goddess of luck, fate and fortune, and she was revered by many cultures throughout history for her ability to bring wealth and prosperity to those who were blessed by her. The Divine Draw is an event that is intended to harness the power of Fortuna's blessings and distribute them to the players of the lottery. The event is overseen by 100 unique guardians, who are handpicked by Fortuna herself to ensure the transparency and fairness of the event. These guardians are responsible for ensuring that the lottery is conducted in a fair and unbiased manner and that Fortuna's blessings are distributed to the deserving players. </p>
             </div>
             <div className="app__rules-container__field">
-                <p> The remaining funds raised from ticket sales will be distributed as follows: 20% to marketing, 15% to development, 5% to the team, and the remaining 5% to be held in reserve. The use of a smart contract for the winner selection ensures transparency and fairness for all participants. The guardian NFTs can be purchased on the Solana chain and traded with ETH, with a loyalty bonus of 10% for traders. Players must agree to the terms and conditions of the event before participating. The event is open to players aged 18 and above. Players under the age of 18 are not eligible to participate. The event is void where prohibited by law..</p>
+                <p>The Divine Draw is open to all players, regardless of their background or experience. Players can purchase tickets for a nominal fee, and the more tickets they purchase, the better their chances of winning. The prize pool for the lottery is determined by the total number of tickets sold, and each month, a lucky few will be chosen at random to receive a share of the prize money.</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>In addition to the event, the project has a roadmap of future development plans and upcoming events that will make the event more exciting and accessible for players. These include:</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>Development of a mobile app for the Divine Draw, allowing players to purchase tickets, check their ticket numbers, and view the results of the draw from anywhere and at any time. (Q1)</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>Introduction of new ticket purchase options such as bulk purchase discounts and subscription-based options. (Q2)</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>Expansion to more blockchain platforms such as Ethereum, Binance Smart Chain and Polygon to increase accessibility and reach a wider audience. (Q3)</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>Addition of new prizes and rewards such as cars, vacations, and other luxury items. (Q4)</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>Regular promotions and bonuses for players such as bonus tickets for referrals and special promotions for regular players.</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>Limited-time special events every quarter that offer special prizes and bonuses for players.</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>A marketplace for Guardian NFTs where holders can trade or lend them out for a fee (Q4)</p>
+            </div>
+            <div className="app__rules-container__field">
+                <p>The Divine Draw is more than just a lottery, it's an opportunity to be blessed by the great goddess Fortuna and to experience the power of her blessings for yourself. By participating in the event, players will not only have the chance to win big prizes, but they will also be contributing to the transparency and fairness of the event, thanks to the oversight provided by the guardians handpicked by Fortuna herself. With exciting development plans and upcoming events, Fortuna's Divine Draw is set to be an even more exciting and rewarding experience for players in the future.</p>
             </div>
         </div>
       </div>

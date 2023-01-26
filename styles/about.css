@@ -1,0 +1,77 @@
+.app__about {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+}
+
+.app__about-container__field {
+    margin-bottom: 1.5rem;
+}
+.app__about-container__header h2 {
+    font-family: var(--title);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.app__about-container__field p {
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+.app__about-container__field a {
+    color: #fff;
+}
+
+.app__about-container__button button {
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    padding: 1rem 3rem;
+}
+
+.app__about-container__link {
+    margin-top: 4rem;
+    text-align: center;
+}
+.app__about-container__field a {
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--title);
+    outline: none;
+    padding: 1rem 2rem;
+    transition: all 250ms ease-in;
+}
+.app__about-container__field a:hover {
+    background-color: #293040;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 824px) {
+    .app__about {
+        padding: 3rem 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .app__about {
+        padding: 2rem 1.5rem;
+    }
+    .app__about-container__header h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .app__about-container__field p {
+        font-size: .875rem;
+    }
+}
