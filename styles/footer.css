@@ -17,7 +17,7 @@
 .app__footer-container ul {
     align-items: center;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     list-style-type: none;
     justify-content: center;
 }
@@ -28,4 +28,21 @@
     font-size: 32px;
     height: 32px;
     width: 32px;
+}
+
+@media screen and (max-width: 824px) {
+    .app__footer-container ul {
+        gap: 1rem;
+    }
+    .app__footer-container__social {
+        margin-bottom: 1rem;
+    }
+    .app__footer-container__social .app__icons svg {
+        font-size: 25px;
+        height: 25px;
+        width: 25px;
+    }
+    .app__footer-container p {
+        font-size: 12px;
+    }
 }

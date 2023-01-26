@@ -5,7 +5,7 @@ export default function About() {
       <div className="app__rules section__container">
         <div className="app__rules-container">
             <div className="app__rules-container__header">
-                <h2> About the Fortuna Wheel Lottery </h2>
+                <h2> About Fortuna's Realm </h2>
             </div>
             <div className="app__rules-container__field">
                 <p> Fortuna's Divine Draw is a lottery event that is steeped in the mystical and ancient traditions of the great goddess Fortuna. According to legend, Fortuna was the goddess of luck, fate and fortune, and she was revered by many cultures throughout history for her ability to bring wealth and prosperity to those who were blessed by her. The Divine Draw is an event that is intended to harness the power of Fortuna's blessings and distribute them to the players of the lottery. The event is overseen by 100 unique guardians, who are handpicked by Fortuna herself to ensure the transparency and fairness of the event. These guardians are responsible for ensuring that the lottery is conducted in a fair and unbiased manner and that Fortuna's blessings are distributed to the deserving players. </p>
