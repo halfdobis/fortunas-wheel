@@ -23,6 +23,6 @@ export const steps = [
     {
         id: 5,
         title: 'Become a Guardian to Earn while Hodling!',
-        text: 'In addition to the ticket holders, the lottery also has 200 NFT holders, known as guardians, who are entitled to 20% of the funds from the ticket sales at the end of the drawing. The guardians are represented as unique NFTs that can be purchased on the Solana chain and traded with ETH, with a loyalty bonus of 10% for traders.'
+        text: 'In addition to the ticket holders, the lottery also has 100 NFT holders, known as guardians, who are entitled to 20% of the funds from the ticket sales at the end of the drawing. The guardians are represented as unique NFTs that can be purchased on the Abitrum chain and traded with ETH. Each holder automatically becomes a stakeholder in the Divine draw raffle.'
     },
 ]

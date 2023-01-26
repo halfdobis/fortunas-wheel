@@ -5,7 +5,7 @@ export default function Rules() {
     <div className="app__rules section__container">
       <div className="app__rules-container">
           <div className="app__rules-container__header">
-              <h2> Rules of Fortuna's Divine Draw : </h2>
+              <h2> Rules of Fortuna's Divine Draw </h2>
           </div>
           <div className="app__rules-container__field">
               <p> To  participate in the event, players must purchase a lottery ticket for $50 during the sales period. Each ticket will be assigned a unique ticket number and the player's name will be recorded on the ticket. The sales period for tickets will run for one month, giving players ample time to purchase tickets and join the drawing. At the end of the sales period, a smart contract will randomly select 10 winners from all the ticket holders using a secure and transparent process. The winners will be announced and the smart contract will distribute 50% of the funds raised from ticket sales to them equally. The lottery also has 200 NFT holders, known as guardians, who are entitled to 20% of the funds from the ticket sales at the end of the drawing.</p>

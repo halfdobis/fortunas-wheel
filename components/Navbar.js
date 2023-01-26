@@ -11,9 +11,9 @@ const Menu = ({ handle_click}) => {
   return  (
     <ul>
       <li onClick={handle_click}><Link href="/" className={`${pathname === "/" && "app__navbar-link__active"}`}> Home </Link></li>
+      <li onClick={handle_click}><Link href="/story" className={`${pathname === "/story" && "app__navbar-link__active"}`}> Story </Link></li>
       <li onClick={handle_click}><Link href="/about" className={`${pathname === "/about" && "app__navbar-link__active"}`}> About </Link></li>
       <li onClick={handle_click}><Link href="/rules" className={`${pathname === "/rules" && "app__navbar-link__active"}`}> Rules </Link></li>
-      <li onClick={handle_click}><Link href="/story" className={`${pathname === "/story" && "app__navbar-link__active"}`}> Story </Link></li>
       <li onClick={handle_click}><Link href="/how-it-works"  className={`${pathname === "/how-it-works" && "app__navbar-link__active"}`}> How It Works </Link></li>
     </ul>
   )

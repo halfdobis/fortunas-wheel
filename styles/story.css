@@ -18,10 +18,9 @@
     line-height: 1.5rem;
     font-weight: 300;
 }
-.app__story-container__field video {
+.app__story-container__img video {
     margin: auto;
-    width: 60%;
-    margin-left: 20%;
+    width: 100%;
     height: 100vh;
 }
 
@@ -41,5 +40,8 @@
     }
     .app__story-container__field p {
         font-size: .875rem;
+    }
+    .app__story-container__img video {
+        height: 50vh;
     }
 }

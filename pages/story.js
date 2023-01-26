@@ -6,9 +6,9 @@ function Story() {
             <div className="app__story-container__header">
                 <h2> Fortuna History </h2>
             </div>
-            {/* <div className="app__story-container__img section__container">
+            <div className="app__story-container__img section__container">
                 <video src={require("../assets/images/story.mp4")} controls={true} />
-            </div> */}
+            </div>
             <div className="app__story-container__field">
                 <p>Long ago, in a realm blessed by the great goddess of fortune, Fortuna, there was a monthly lottery event known as the Divine Draw. The event was held in Fortuna's grand palace, where the goddess would preside over the drawing and bless the lucky winners with wealth and prosperity. </p>
             </div>
