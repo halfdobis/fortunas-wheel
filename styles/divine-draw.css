@@ -1,0 +1,263 @@
+.app__divine-draw__header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    padding: 4rem 0;
+    text-align: center;
+}
+.app__divine-draw__header-container {
+    width: 100%;
+}
+
+.app__divine-draw__header h4 {
+    font-family: var(--title);
+    font-size: 2rem;
+}
+
+.app__divine-draw__header h2 {
+    font-family: var(--subtitle);
+    font-size: 3rem;
+}
+
+.app__divine-draw__header button {
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    color: #293040;
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .625rem 2rem;
+}
+
+.app__divine-draw__header button:disabled {
+    background-color: #e9eaeb;
+    color: #bdc2c4;
+    cursor:not-allowed;
+}
+
+.countdown {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 1rem 0 2rem;
+}
+
+.time div {
+    align-items: center;
+    background-color: #293040;
+    border-radius: .4rem;
+    box-shadow: 0px 1px 2px rgba(255, 255, 255, .6);
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    width: 5rem;
+}
+
+.countdown h2 {
+    font-family: var(--subtitle);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.countdown p {
+    font-family: var(--subtitle);
+    font-size: .875rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* history */
+.app__divine-draw__history {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 4rem 0;
+}
+
+.app__divine-draw__history-container {
+    background-color: #293040;
+    box-shadow: 0px 1px 2px rgba(255, 255, 255, .6);
+    padding: 1rem;
+    width: 100%;
+}
+
+.ticket {
+    background-color: #293040;
+    border-radius: .4rem;
+    box-shadow: 0px 1px 2px rgba(255, 255, 255, .6);
+    margin: auto;
+    margin-top: -3rem;
+    padding: .5rem 1rem;
+    width: max-content;
+}
+
+.ticket__balls {
+    align-items: center;
+    display: flex;
+    gap: .6rem;
+    justify-content: center;
+}
+
+.ticket p {
+    font-family: var(--subtitle);
+    font-size: .825rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.ticket__balls h3 {
+    font-family: var(--subtitle);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.ticket__balls .balls {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    width: 3rem;
+}
+
+.ticket__balls .balls:first-child {
+    background-color: #D750B2;
+}
+.balls:nth-child(n+1) {
+    background-color:  #A881FC;
+}
+.balls:nth-child(2n+1) {
+    background-color:  #1FC7D4;
+}
+.balls:nth-child(3n+1) {
+    background-color: #31D0AA;
+}
+.balls:nth-child(4n+1) {
+    background-color: #93D45A;
+}
+.balls:nth-child(5n+1) {
+    background-color: #FFC43C;
+}
+
+
+.app__divine-draw__history-header {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.app__divine-draw__history-header svg {
+    font-size: 2rem;
+}
+
+.app__divine-draw__history-header__left {
+    font-family: var(--subtitle);
+}
+
+.app__divine-draw__history-round span, .app__divine-draw__history-header__left p {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.app__divine-draw__history-header__left input {
+    background-color: #e9eaeb;
+    border: none;
+    border-radius: 2rem;
+    color: #bdc2c4;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    margin-left: .5rem;
+    padding: .45rem 1rem;
+    width: 3.75rem;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.app__divine-draw__history-round {
+    margin-bottom: .4rem;
+}
+
+.app__divine-draw__history-header__right {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* HISTORY BODY */
+.app__divine-draw__history-body {
+    font-family: var(--subtitle);
+}
+
+.app__divine-draw__history-body table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.app__divine-draw__history-body thead {
+    background-color: #0C0813;
+}
+
+.app__divine-draw__history-body th {
+    font-size: .825rem;
+    font-weight: 400;
+    padding: .5rem 0;
+}
+
+
+/* steps */
+.app__divine-draw__steps {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.app__divine-draw__steps-container h2 {
+    font-family: var(--title);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.app__divine-draw__step {
+    background-color: #293040;
+    border-radius: .4rem;
+    box-shadow: 0px 1px 2px rgba(255, 255, 255, .6);
+    padding: 1.5rem;
+}
+
+.app__divine-draw__step h3 {
+    font-family: var(--title);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.app__divine-draw__step p {
+    font-family: var(--subtitle);
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.app__divine-draw__step span {
+    display: block;
+    font-family: var(--subtitle);
+    font-size: .75rem;
+    font-weight: 500;
+    text-align: right;
+}
