@@ -1,71 +1,48 @@
+.app__guardian {
+    padding: 0 4rem;
+}
 
-.app__guardians {
-    overflow: hidden;
-    padding: 6rem 2rem 0;
-    margin-bottom: 2rem;
+.app__guardian-container {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 4rem);
+    justify-content: center;
+}
+
+.app__guardian-row {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
     width: 100%;
 }
 
-.app__guardians-container {
-    border-bottom: 2px solid rgb(219, 219, 219);
-    padding-bottom: 4rem;
+.app__guardian-row__left, .app__guardian-row__right {
+    flex: 1;
+    height: 100%;
 }
 
-.app__guardians-container__textbox {
-    margin-bottom: 4rem;
+.app__guardian-row__left {
+    flex: 1.5;
 }
 
-.app__guardians-container__textbox h2 {
-    color: #fff;
+.app__guardian-row__left h1 {
     font-family: var(--title);
     font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 1.2rem;
-    text-align: center;
+    font-weight: 600;
+    line-height: 2.7rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
-.app__guardians-container__textbox p {
-    color: #faf8f8;
-    font-family: var(--subtitle);
+.app__guardian-row__left p {
     font-size: 1rem;
-    font-weight: 400;
-    margin: auto;
-    width: 90%;
+    font-weight: 600;
+    font-family: var(--subtitle);
+    text-transform: uppercase;
 }
 
-.app__guardians-container__image {
-    display: flex;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 1rem;
-    width: 100%;
-}
-
-.app__guardians-container__image .app__guardian-image {
-    border-radius: 1rem;
-    height: auto;
-    margin-right: 1rem;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-.app__guardian-image img {
-    height: 100%;
-    transition: transform 300ms;
-    width: 100%;
-}
-
-.app__guardian-image img:hover {
-    transform: scale(1.08px);
-}
-
-.app__guardians-link__container {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.app__guardians-link__container a {
+.app__guardian-btn {
     background-color: #fff;
     border: none;
     color: #000000;
@@ -73,48 +50,18 @@
     font-size: 1.4rem;
     font-weight: 600;
     font-family: var(--title);
+    margin-top: 1rem;
     outline: none;
     padding: 1rem 2rem;
     transition: all 250ms ease-in;
 }
-.app__guardians-link__container a:hover {
-    background-color: #293040;
-    color: #fff;
+
+.app__guardian-row__right {
+    background-color: cadetblue;
+    display: flex;
 }
 
-@media screen and (max-width: 824px) {
-    .app__guardians {
-        padding: 3rem 1.5rem 0;
-    }
-    .app__guardians-container__image {
-        grid-gap: 1.5rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .app__guardians-container__textbox h2 {
-        font-size: 2.5rem;
-    }
-    .app__guardians-container__textbox p {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .app__guardians {
-        padding: 2rem 1rem 0;
-    }
-    .app__guardians-container__textbox h2 {
-        font-size: 2rem;
-    }
-    .app__guardians-container__textbox p {
-        font-size: .875rem;
-        line-height: 1.5rem;
-        font-weight: 400;
-    }
-    .app__guardians-container__image {
-        margin: auto;
-        grid-gap: 3rem;
-        grid-template-columns: repeat(1, 1fr);
-        width: 300px;
-    }
+.card img {
+    height: 100%;
+    width: 100%;
 }
