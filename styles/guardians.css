@@ -1,0 +1,120 @@
+
+.app__guardians {
+    overflow: hidden;
+    padding: 6rem 2rem 0;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.app__guardians-container {
+    border-bottom: 2px solid rgb(219, 219, 219);
+    padding-bottom: 4rem;
+}
+
+.app__guardians-container__textbox {
+    margin-bottom: 4rem;
+}
+
+.app__guardians-container__textbox h2 {
+    color: #fff;
+    font-family: var(--title);
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.app__guardians-container__textbox p {
+    color: #faf8f8;
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: auto;
+    width: 90%;
+}
+
+.app__guardians-container__image {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.app__guardians-container__image .app__guardian-image {
+    border-radius: 1rem;
+    height: auto;
+    margin-right: 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.app__guardian-image img {
+    height: 100%;
+    transition: transform 300ms;
+    width: 100%;
+}
+
+.app__guardian-image img:hover {
+    transform: scale(1.08px);
+}
+
+.app__guardians-link__container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.app__guardians-link__container a {
+    background-color: #fff;
+    border: none;
+    color: #000000;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: var(--title);
+    outline: none;
+    padding: 1rem 2rem;
+    transition: all 250ms ease-in;
+}
+.app__guardians-link__container a:hover {
+    background-color: #293040;
+    color: #fff;
+}
+
+@media screen and (max-width: 824px) {
+    .app__guardians {
+        padding: 3rem 1.5rem 0;
+    }
+    .app__guardians-container__image {
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .app__guardians-container__textbox h2 {
+        font-size: 2.5rem;
+    }
+    .app__guardians-container__textbox p {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .app__guardians {
+        padding: 2rem 1rem 0;
+    }
+    .app__guardians-container__textbox h2 {
+        font-size: 2rem;
+    }
+    .app__guardians-container__textbox p {
+        font-size: .875rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    .app__guardians-container__image {
+        margin: auto;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+        width: 300px;
+    }
+}

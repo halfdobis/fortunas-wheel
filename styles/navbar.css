@@ -36,6 +36,12 @@
     font-family: var(--title);
     font-size: 1.2rem;
     font-weight: 500;
+    transition: all 300ms ease-in;
+}
+
+.app__navbar-container a:hover {
+    border-bottom: 2px solid #fff;
+    padding: 0 0 0.35rem;
 }
 
 .app__navbar-container__links  a.app__navbar-link__active {
