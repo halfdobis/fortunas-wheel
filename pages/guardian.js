@@ -11,7 +11,10 @@ export default function Guardian() {
         <div className="app__guardian-row">
           <div className="app__guardian-row__left">
             <h1> The Fortuna NFT <br /> Guardian </h1>
-            <button className="app__guardian-btn"> Become A Guardian </button>
+            <div className="app__guardian-btns">
+              <button className="app__guardian-btn"> Become A Guardian </button>
+              <button className="app__guardian-btn"> Learn More </button>
+            </div>
           </div>
           <div className="app__guardian-row__right">
             <div className='card'>
