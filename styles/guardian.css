@@ -42,18 +42,32 @@
     text-transform: uppercase;
 }
 
+.app__guardian-btns {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
 .app__guardian-btn {
     background-color: #fff;
     border: none;
+    cursor: pointer;
     color: #000000;
     border-radius: 2rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family: var(--title);
     margin-top: 1rem;
     outline: none;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+    min-width: 180px;
+    white-space: nowrap;
     transition: all 250ms ease-in;
+}
+
+.app__guardian-btn:hover {
+    background-color: #1A1D24;
+    color: #fff;
 }
 
 .app__guardian-row__right {
