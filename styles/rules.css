@@ -4,6 +4,7 @@
 
 .app__rules-container__field {
     margin-bottom: 1.5rem;
+    display: none;
 }
 .app__rules-container__header h2 {
     font-family: var(--title);
