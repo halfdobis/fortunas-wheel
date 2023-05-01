@@ -14,7 +14,7 @@ export default function About() {
     const showLess = () => setActive(3);
 
     return (
-      <div className="app__rules section__container">
+      <div className="app__about section__container">
         <div className="app__about-container">
             <div className="app__about-header">
                 <h2> About The <br /> FortunaNFT Realm </h2>

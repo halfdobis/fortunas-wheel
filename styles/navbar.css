@@ -16,6 +16,7 @@
 }
 .app__navbar.appear {
     background-color: #0C0813;
+    border-bottom: 1px solid #293040;
 }
 
 .app__navbar-container {
@@ -40,7 +41,7 @@
 .app__navbar-container a {
     color: gray;
     font-family: var(--subtitle);
-    font-size: 1.2rem;
+    font-size: .875em;
     font-weight: 500;
     transition: all 300ms ease-in;
 }
@@ -78,6 +79,22 @@
     margin: 1rem 0;
 }
 
+.app__navbar-btn {
+    background-color: #fff;
+    border-radius: .675rem;
+    color: #000;
+    padding: 0.5rem 1rem;
+}
+
+.app__navbar-btn:hover {
+    background-color: #293040;
+}
+
+.app__navbar-btn.app__navbar-link__active {
+    background-color: #293040;
+    text-decoration: line-through;
+}
+
 @media screen and (max-width: 600px) {
     .app__navbar-container__links ul {
         display: none;
@@ -86,3 +103,4 @@
         display: flex;
     }
 }
+

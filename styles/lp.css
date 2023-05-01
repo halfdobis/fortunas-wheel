@@ -1,0 +1,292 @@
+
+
+/* About Section */
+.app__lp-about {
+    padding: 4rem 0 0;
+    margin-bottom: 7.5rem;
+}
+
+.app__lp-about_header {
+    text-align: center;
+}
+
+.app__lp-about_header h2 {
+    font-size: 4rem;
+    font-family: var(--title);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+.app__lp-about_content {
+    margin: auto;
+    width: 85%;
+}
+
+.app__lp-about_row {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+}
+
+.app__lp-about_col {
+    flex: .5;
+}
+
+.app__lp-about_col.-right {
+    flex-grow: 1;
+}
+
+.app__img-container {
+}
+
+.app__lp-about_col.-left img {
+    width: 447px;
+    height: auto;
+}
+
+.app__lp-about_col h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: var(--title);
+    margin-bottom: 1rem;
+}
+
+.app__lp-about_col p {
+    font-family: var(--subtitle);
+    font-size: .875rem;
+}
+
+.app__lp-about_link {
+    margin-top: 2rem;
+}
+
+.app__lp-about_link a {
+    border-radius: 1rem;
+    border: 1px solid #293040;
+    color: #fff;
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.app__lp-about_link a:hover {
+    background-color: #293040;
+}
+
+/* Guardians */
+
+.app__lp-guardians {
+    margin-bottom: 7.5rem;
+}
+
+.app__lp-guardians_container {
+    padding: 0 1rem;
+}
+
+.app__lp-guardians_header h2 {
+    font-family: var(--title);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 600px;
+}
+
+.app__lp-guardians_image {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 4rem;
+}
+
+.-item1 {
+    rotate: -5deg;
+}
+
+.-item2 {
+    rotate: -4deg;
+}
+
+.-item3 {
+    rotate: 4deg;
+}
+
+.-item4 {
+    rotate: 5deg;
+}
+
+.app__lp-guardians_btns {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.app__lp-guardians_btn a {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 2rem;
+    font-size: .875rem;
+    font-weight: 600;
+    font-family: var(--subtitle);
+    margin-top: 1rem;
+    outline: none;
+    padding: 1rem 1.5rem;
+    min-width: 180px;
+    white-space: nowrap;
+    transition: all 250ms ease-in;
+}
+
+.app__lp-guardians_btn a:hover {
+    border: 1px solid #fff;
+    background-color: #1A1D24;
+    color: #fff;
+}
+
+
+/* How To Play */
+
+.app__lp-howtoplay {
+    margin-bottom: 7.5rem;
+}
+
+.app__lp-howtoplay_container {
+    padding: 0 1rem;
+}
+
+.app__lp-howtoplay_header h2 {
+    font-family: var(--title);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 600px;
+}
+
+.app__lp-howtoplay_header p {
+    font-family: var(--subtitle);
+    font-size: .875rem;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 824px;
+}
+
+.app__lp-howtoplay_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.app__lp-howtoplay_content .app__lp-howtoplay_card {
+    background-color: #293040;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px rgba(255,255,255, 0.6);
+    padding: 1rem;
+}
+
+.app__lp-howtoplay_card h3{
+    font-family: var(--title);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.app__lp-howtoplay_card p {
+    font-family: var(--subtitle);
+    font-weight: 400;
+    font-size: .875rem;
+}
+
+.app__lp-howtoplay_card .app__lp-howtoplay_card-step {
+    font-family: var(--title);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: .65rem;
+}
+
+
+/* FAQ */
+
+.app__lp-faq {
+    padding:0 2rem;
+    margin-bottom: 7.5rem;
+}
+
+.app__lp-faq_container {
+    margin: auto;
+    max-width: 824px;
+}
+
+.app__lp-faq_heading h2 {
+    font-family: var(--title);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.app__lp-faq_heading p {
+    color: #fff;
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .app__lp-howtoplay_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 824px) {
+    .app__lp-guardians_image {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app__lp-faq {
+        padding: 3rem 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .app__lp-guardians_header h2, .app__lp-howtoplay_header h2 {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .app__lp-howtoplay_content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .app__lp-faq_heading h2, 
+    .app__lp-guardians_header h2,
+    .app__lp-howtoplay_header h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .app__lp-faq_heading p {
+        font-size: .875rem;
+    }
+}

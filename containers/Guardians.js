@@ -7,19 +7,25 @@ import { guardians } from '../data/guardian';
 
 function Guardians() {
   return (
-    <div className="app__guardians section__container">
-        <div className="app__guardians-container">
-            <div className="app__guardians-container__textbox">
-                <h2> Become A Guardian </h2>
-                <p> Get ready for the most exciting NFT drop this year! The lottery has 100 NFT holders, known as guardians, who are entitled to 20% of the funds from the ticket sales at the end of the drawing. The guardians are represented as unique NFTs that can be purchased on the Abitrum chain and traded with ETH. </p>
+    <div className="app__lp-guardians section__container">
+        <div className="app__lp-guardians_container">
+            <div className="app__lp-guardians_header">
+                <h2> The Fortuna NFT Guardian Collections </h2>
             </div>
-            <div className="app__guardians-container__image">
-                { guardians.map((guardian, index) => (
-                    <Guardian key={index} guardian={guardian} />
+            <div className="app__lp-guardians_image">
+                { guardians.slice(0, 4).map((guardian, index) => (
+                    <Guardian 
+                        key={index} guardian={guardian}
+                        item={`-item${index+1}`} 
+                    />
                 ))}
             </div>
-            <div className="app__guardians-link__container">
-                <Link href="/guardian"> Become A Guardian </Link>
+            <div className="app__lp-guardians_btns">
+                <div className="app__lp-guardians_btn">
+                    <Link href="/guardian"> 
+                        <span> Become A Guardian </span> 
+                    </Link>
+                </div>
             </div>
         </div>
     </div>

@@ -1,13 +1,17 @@
 .app__guardian {
-    padding: 0 4rem;
+    padding: 2rem 4rem;
 }
 
 .app__guardian-container {
     align-items: center;
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 4rem);
     justify-content: center;
+}
+
+.app__guardian-header {
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
 }
 
 .app__guardian-container h1 {
@@ -15,15 +19,28 @@
     font-size: 3rem;
     font-weight: 600;
     line-height: 2.7rem;
-    margin-bottom: 1rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     text-align: center;
+    width: 600px;
+}
+
+.app__guardian-container p {
+    font-family: var(--subtitle);
+    font-size: .875rem;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 824px;
 }
 
 .app__guardian-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
-    gap: 32px;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .app__guardian-grid img {
@@ -31,10 +48,20 @@
     height: auto;
 }
 
-.app__guardian-grid_item {}
-
 .-item1 {
     rotate: -5deg;
+}
+
+.-item2 {
+    rotate: -4deg;
+}
+
+.-item3 {
+    rotate: 4deg;
+}
+
+.-item4 {
+    rotate: 5deg;
 }
 
 .app__guardian-row__left p {
@@ -48,26 +75,28 @@
     align-items: center;
     display: flex;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
-.app__guardian-btn {
+.app__guardian-btn a {
     background-color: #fff;
     border: none;
     cursor: pointer;
     color: #000000;
     border-radius: 2rem;
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 600;
-    font-family: var(--title);
+    font-family: var(--subtitle);
     margin-top: 1rem;
     outline: none;
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     min-width: 180px;
     white-space: nowrap;
     transition: all 250ms ease-in;
 }
 
-.app__guardian-btn:hover {
+.app__guardian-btn a:hover {
+    border: 1px solid #fff;
     background-color: #1A1D24;
     color: #fff;
 }
@@ -80,4 +109,30 @@
 .card img {
     height: 100%;
     width: 100%;
+}
+
+
+@media screen and (max-width: 824px) {
+    .app__guardian-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app__guardian-container p {
+        width: 100%;
+    }
+
+    .-item3 {
+        rotate: -5deg;
+    }
+
+    .-item2 {
+        rotate: 5deg;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .app__guardian-container h1 {
+        width: 100%;
+    }
 }

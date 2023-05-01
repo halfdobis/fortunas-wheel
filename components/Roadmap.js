@@ -23,7 +23,7 @@ const Roadmap = ({ roadmap }) => {
                 </div>
                 <div className={`app__roadmap-body ${ visible ? "-visible" : "-hidden"}`}>
                     <div>
-                        {roadmap.maps.slice(0,2).map((item, index) => (
+                        {roadmap.maps.map((item, index) => (
                             <p key={index}> { item } </p>
                         ))}
                     </div>
