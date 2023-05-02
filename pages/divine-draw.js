@@ -51,7 +51,7 @@ export default function DivineDraw() {
         {/* Header */}
         <div className="app__divine-draw__header">
           <div className="app__divine-draw__header-container">
-          <h4> The Fortuna Lottery </h4>
+          <h4> The Divine Draw </h4>
           <h2> Tickets on sale soon </h2>
           <div className="countdown">
             <div className="days time">

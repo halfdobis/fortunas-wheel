@@ -51,9 +51,6 @@
     justify-content: center;
 }
 
-.app__header-col.-right {
-}
-
 .app__header-col .app__header-img {
     border-radius: 1rem;
     overflow: hidden;
