@@ -82,12 +82,13 @@
 .app__navbar-btn {
     background-color: #fff;
     border-radius: .675rem;
-    color: #000;
+    color: #000 !important;
     padding: 0.5rem 1rem;
 }
 
 .app__navbar-btn:hover {
     background-color: #293040;
+    color: #fff !important;
 }
 
 .app__navbar-btn.app__navbar-link__active {

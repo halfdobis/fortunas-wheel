@@ -18,7 +18,7 @@ function Header() {
             <div className="app__header-col -right">
               <div className="app__header-text">
                 <h2> FORTUNA'S REALM </h2>
-                <p> Welcome to Forutna's Real, The goddess of Luck <br /> Play the Divine Draw, become a guardian, and let Fortuna's fortune shine on you. </p>
+                <p> Welcome to Forutna's Realm, The goddess of Luck! <br /> Play the Divine Draw, become a guardian, let Fortuna's fortune shine on you! </p>
                 <div className="app__header-btns">
                   <Link href="/divine-draw" className="app__header-btn_alt"> 
                     <span> Divine Draw </span> 
