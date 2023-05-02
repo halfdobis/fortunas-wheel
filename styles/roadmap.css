@@ -1,0 +1,114 @@
+.app__roadmap {
+    border-bottom: 1px solid #293040;
+}
+
+.app__roadmap:last-child {
+    border-bottom: 0;
+}
+
+.app__about-roadmap_header {
+    margin-bottom: 4rem;
+}
+
+.-roadmap {
+    margin-bottom: 2rem;
+}
+
+.-roadmap .app__about-roadmap_header h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: var(--title);
+    width: 600px;
+}
+
+.app__roadmap-container {
+    display: flex;
+    padding: 2rem 0 2rem;
+}
+
+.app__roadmap-header, .app__roadmap-body {
+    flex: .5;
+}
+
+.app__roadmap-header .icons {
+    display: none;
+}
+
+.app__roadmap-header h2 {
+    font-family: var(--title);
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.app__roadmap-body {
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+
+.app__roadmap-body p {
+    font-family: var(--subtitle);
+    font-size: .875rem;
+    font-weight: 400;
+    margin-bottom: .75rem;
+}
+
+.app__roadmap-icons {
+    max-width: max-content;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 956px) {
+    .-roadmap .app__about-roadmap_header h2 {
+        font-size: 4rem;
+        width: 650px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .app__roadmap-container {
+        flex-direction: column;
+    }
+
+    .-roadmap .app__about-roadmap_header h2 {
+        font-size: 3.5rem;
+        width: 560px;
+    }
+    
+    .app__roadmap-header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .app__roadmap-header .icons {
+        display: inline-block;
+    }
+
+    .app__roadmap-body.-hidden {
+        visibility: hidden;
+        display: none;
+    }
+
+    .app__roadmap-body.-visible {
+        visibility: visible;
+        display: block;
+    }
+
+    .app__roadmap-body .app__roadmap-icons {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .-roadmap .app__about-roadmap_header h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .app__roadmap-header h2 {
+        font-size: 1.8rem;
+    }
+}

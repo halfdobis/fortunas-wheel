@@ -1,69 +1,60 @@
 .app__rules {
-    padding: 4rem 2rem;
+    margin-top: 1rem;
+    padding: 0 0 4rem;
 }
 
-.app__rules-container__field {
+.app__rules-field {
+    margin: auto;
     margin-bottom: 1.5rem;
+    max-width: 956px;
 }
-.app__rules-container__header h2 {
+
+.app__rules-header {
+    align-items: center;
+    background-color: #293040;
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.app__rules-header h2 {
     font-family: var(--title);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
     margin-bottom: 2.5rem;
-    text-align: center;
 }
-.app__rules-container__field p {
+.app__rules-field p {
     font-family: var(--subtitle);
-    font-size: 1rem;
+    font-size: .875rem;
     line-height: 1.5rem;
     font-weight: 300;
-}
-.app__rules-container__field a {
-    color: #fff;
+    display: flex
 }
 
-.app__rules-container__button button {
-    border: none;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    font-weight: 500;
-    outline: none;
-    padding: 1rem 3rem;
-}
-
-.app__rules-container__link {
-    margin-top: 2rem;
-    text-align: center;
-}
-.app__rules-container__field a {
+.app__rules-field .dot {
+    min-width: 12px;
+    height: 12px;
     background-color: #fff;
-    border: none;
-    border-radius: 2rem;
-    color: #000000;
-    font-size: 1.4rem;
-    font-weight: 600;
-    font-family: var(--title);
-    outline: none;
-    padding: 1rem 2rem;
-    transition: all 250ms ease-in;
-}
-.app__rules-container__field a:hover {
-    background-color: #293040;
-    color: #fff;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-top: 10px;
 }
 
 
 @media screen and (max-width: 824px) {
-    .app__rules {
-        padding: 3rem 1.5rem 0;
+    .app__rules-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .app__rules-content {
+        padding: 1rem;
     }
 }
 
 @media screen and (max-width: 560px) {
-    .app__rules {
-        padding: 2rem 1.5rem;
-    }
-    .app__rules-container__header h2 {
+    .app__rules-header h2 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
     }

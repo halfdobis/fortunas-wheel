@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 
 import { BiArrowToRight, BiRightArrowAlt, BiLeftArrowAlt } from 'react-icons/bi'
 
@@ -21,6 +21,30 @@ export default function DivineDraw() {
     { id: 1, prize: '', match: '', }
   ]
 
+  // Set the date we're counting down to
+  const [ seconds, set_seconds ] = useState(0);
+  const [ days, set_days ] = useState(0);
+  const [ hours, set_hours ] = useState(0);
+  const [ minutes, set_minutes ] = useState(0);
+  var countDownDate = new Date("Dec 16, 2023 15:37:25").getTime();
+
+  
+  useEffect(()=> {
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+          // Get today's date and time
+          var now = new Date().getTime();
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;              
+          // Time calculations for days, hours, minutes and seconds
+          set_days(Math.floor(distance / (1000 * 60 * 60 * 24)));
+          set_hours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+          set_minutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+          set_seconds(Math.floor((distance % (1000 * 60)) / (1000)));
+            
+      }, 1000);
+  },[])
+
   return (
     <div className="app__divine-draw section__container">
       <div className='app__divine-draw__container'>
@@ -32,25 +56,25 @@ export default function DivineDraw() {
           <div className="countdown">
             <div className="days time">
               <div>
-                <h2> 01</h2>
+                <h2> { days < 10 ? "0"+days : days } </h2>
               </div>
               <p> Days </p>
             </div>
             <div className="hours time">
               <div>
-                <h2> 12 </h2>
+                <h2> { hours < 10 ? "0"+hours : hours } </h2>
               </div>
               <p> hours </p>
             </div>
             <div className="minutes time">
               <div>
-                <h2> 27</h2>
+                <h2> { minutes < 10 ? "0"+minutes : minutes } </h2>
               </div>
               <p> minutes </p>
             </div>
             <div className="seconds time">
               <div>
-                <h2> 54 </h2>
+                <h2> { seconds < 10 ? "0"+seconds : seconds }</h2>
               </div>
               <p> seconds </p>
             </div>

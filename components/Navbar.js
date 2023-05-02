@@ -4,17 +4,18 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
-import logo from '../assets/images/Fortuna-Logo.jpg';
+import logo from '../assets/images/logo.png';
 
 const Menu = ({ handle_click}) => {
   const { pathname } = useRouter();
   return  (
     <ul>
       <li onClick={handle_click}><Link href="/" className={`${pathname === "/" && "app__navbar-link__active"}`}> Home </Link></li>
-      <li onClick={handle_click}><Link href="/story" className={`${pathname === "/story" && "app__navbar-link__active"}`}> Story </Link></li>
+      <li onClick={handle_click}><Link href="/guardian" className={`${pathname === "/guardian" && "app__navbar-link__active"}`}> Guardian </Link></li>
       <li onClick={handle_click}><Link href="/about" className={`${pathname === "/about" && "app__navbar-link__active"}`}> About </Link></li>
       <li onClick={handle_click}><Link href="/rules" className={`${pathname === "/rules" && "app__navbar-link__active"}`}> Rules </Link></li>
       <li onClick={handle_click}><Link href="/how-it-works"  className={`${pathname === "/how-it-works" && "app__navbar-link__active"}`}> How It Works </Link></li>
+      <li onClick={handle_click}><Link href="/divine-draw"  className={`app__navbar-btn ${pathname === "/divine-draw" && "app__navbar-link__active"}`}> Play now </Link></li>
     </ul>
   )
 }
