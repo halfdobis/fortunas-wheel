@@ -46,10 +46,11 @@ export default function DivineDraw() {
   },[])
 
   return (
-    <div className="app__divine-draw section__container">
+    <div className="app__divine-draw">
       <div className='app__divine-draw__container'>
         {/* Header */}
         <div className="app__divine-draw__header">
+          <div className="app__divine-draw_overlay" />
           <div className="app__divine-draw__header-container">
           <h4> The Divine Draw </h4>
           <h2> Tickets on sale soon </h2>
@@ -84,7 +85,7 @@ export default function DivineDraw() {
         </div>
 
         {/* HISTORY */}
-        <div className="app__divine-draw__history">
+        <div className="app__divine-draw__history section__container">
           <div className="app__divine-draw__history-container">
             <div className="app__divine-draw__history-ticket">
               <div className="ticket">
@@ -135,7 +136,7 @@ export default function DivineDraw() {
         </div>
 
         {/* STEPS TO EARN */}
-        <div className="app__divine-draw__steps-container">
+        <div className="app__divine-draw__steps-container section__container">
           <h2> Start Earning today! </h2>
           <div className="app__divine-draw__steps">
             <div className="app__divine-draw__step">

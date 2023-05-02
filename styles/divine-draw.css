@@ -1,13 +1,36 @@
 .app__divine-draw__header {
     align-items: center;
+    background-image: url('../assets/images/Fortuna.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
+    margin-top: -4rem;
+    margin-bottom: 4.5rem;
+    min-height: 100vh;
     padding: 2rem 0;
-    padding: 4rem 0;
+    position: relative;
     text-align: center;
 }
-.app__divine-draw__header-container {
+
+.app__divine-draw_overlay {
+    background-color: rgba(0,0,0,0.65);
+    padding: 6rem 2rem 4rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 100%;
+    z-index: 1;
+}
+
+.app__divine-draw__header-container {
+    padding: 4rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
 }
 
 .app__divine-draw__header h4 {
