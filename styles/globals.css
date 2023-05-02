@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Poppins:wght@300;500;600&display=swap');
 :root {
-    --title: 'Iceland', cursive;
+    --title: 'Iceland', sans-serif;
     --subtitle: 'Poppins', sans-serif;
 }
 

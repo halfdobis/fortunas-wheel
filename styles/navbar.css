@@ -95,7 +95,7 @@
     text-decoration: line-through;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .app__navbar-container__links ul {
         display: none;
     }

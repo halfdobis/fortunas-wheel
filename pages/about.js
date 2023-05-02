@@ -3,15 +3,13 @@ import Image from 'next/image';
 import Roadmap from '../components/Roadmap';
 import roadmap from '../data/roadmap';
 import about from '../data/about';
+import story from '../data/story';
 
 import guardian from '../assets/images/guardian1.jpeg';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import guardian2 from '../assets/images/guardian3.jpeg';
 
 export default function About() {
     const [ active, setActive ] = useState(3);
-    
-    const showMore = () => setActive(about.length);
-    const showLess = () => setActive(3);
 
     return (
       <div className="app__about section__container">
@@ -19,6 +17,7 @@ export default function About() {
             <div className="app__about-header">
                 <h2> About The <br /> FortunaNFT Realm </h2>
             </div>
+
             <div className="app__about-row -about">
                 <div className="app__about-col -left">
                     <Image src={guardian} alt="" />
@@ -34,6 +33,23 @@ export default function About() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </div>
+
+            {/* Story */}
+            <div className="app__about-row -story">
+                <div className="app__about-col -left">
+                    <div className='app__about-story_header'>
+                        <h2> FortunaNFT Story </h2>
+                    </div>
+                    { story.map((story, index) => (
+                        <div className="app__about-story_field" key={index}>
+                            <p> { story } </p>
+                        </div>
+                    ))}
+                </div>
+                <div className="app__about-col -right">
+                    <Image src={guardian2} alt="" />
                 </div>
             </div>
 

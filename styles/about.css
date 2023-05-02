@@ -59,12 +59,12 @@
 
 
 .app__about-row.-about {
-    margin-bottom: 4rem;
+    margin-bottom: 7.5rem;
 }
 
 .app__about-header h2 {
     display: none;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: var(--title);
     margin-bottom: 2rem;
 }
@@ -73,18 +73,19 @@
     display: block;
 }
 
-.app__about-row.-about {
+.app__about-row.-about, .app__about-row.-story {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
     position: relative;
 }
 
-.app__about-col.-right {
+.app__about-row.-about .app__about-col.-right,
+.app__about-row.-story .app__about-col.-left {
     flex-grow: 1;
 }
 
-.app__about-header {
+.app__about-header, .app__about-story_header {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -122,6 +123,33 @@
     position: relative;
 }
 
+
+/* Story */
+.app__about-row.-story {
+    margin-bottom: 7.5rem;
+}
+
+.app__about-story_header h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: var(--title);
+    margin-bottom: 2rem;
+}
+
+.app__about-story_field p {
+    font-size: .75rem;
+    font-weight: 400;
+    font-family: var(--subtitle);
+}
+
+.app__about-story_field {
+    margin-bottom: 1.5rem;
+}
+
+.app__about-story_field:last-child {
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 956px) {
     .app__about-col img {
         width: 360px;
@@ -133,8 +161,12 @@
         padding: 3rem 1.5rem 0;
     }
 
-    .app__about-row.-about {
+    .app__about-row.-about, .app__about-row.-story {
         flex-direction: column;
+    }
+
+    .app__about-row.-story .app__about-col img {
+        display: none;
     }
 
     .app__about-header {

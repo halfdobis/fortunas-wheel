@@ -1,5 +1,5 @@
 .app__guardian {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
 }
 
 .app__guardian-container {
@@ -26,7 +26,7 @@
     width: 600px;
 }
 
-.app__guardian-container p {
+.app__guardian-header p {
     font-family: var(--subtitle);
     font-size: .875rem;
     font-weight: 500;
@@ -97,12 +97,11 @@
 
 .app__guardian-btn a:hover {
     border: 1px solid #fff;
-    background-color: #1A1D24;
+    background-color: #293040;
     color: #fff;
 }
 
 .app__guardian-row__right {
-    background-color: cadetblue;
     display: flex;
 }
 
@@ -111,8 +110,57 @@
     width: 100%;
 }
 
+.app__guardian-row.-responsibilities {
+    margin-top: 7.5rem;
+}
 
-@media screen and (max-width: 824px) {
+.app__guardian-row.-responsibilities h2 {
+    font-family: var(--title);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    /* width: 768px; */
+}
+
+.app__guardian-row.-responsibilities h4 {
+    font-family: var(--subtitle);
+    font-size: .875rem;
+    font-weight: 400;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    /* width: 768px; */
+}
+
+.app__guardian-row.-responsibilities .app__guardian-fields {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2.5rem 0;
+}
+
+.app__guardian-row.-responsibilities .app__guardian-field {
+    background-color: #293040;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+}
+
+
+.app__guardian-field p {
+    font-family: var(--subtitle);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.app__guardian-row.-responsibilities h6 {
+    font-size: .875rem;
+    font-weight: 400;
+    font-family: var(--subtitle);
+}
+
+@media screen and (max-width: 900px) {
     .app__guardian-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -127,6 +175,21 @@
 
     .-item2 {
         rotate: 5deg;
+    }
+
+    .app__guardian-row.-responsibilities h2 {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .app__guardian-row.-responsibilities .app__guardian-fields {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .app__guardian-row.-responsibilities .app__guardian-fields {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

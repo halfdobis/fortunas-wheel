@@ -2,6 +2,10 @@
     border-bottom: 1px solid #293040;
 }
 
+.app__roadmap:last-child {
+    border-bottom: 0;
+}
+
 .app__about-roadmap_header {
     margin-bottom: 4rem;
 }
@@ -11,10 +15,10 @@
 }
 
 .-roadmap .app__about-roadmap_header h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 600;
     font-family: var(--title);
-    width: 768px;
+    width: 600px;
 }
 
 .app__roadmap-container {
@@ -32,7 +36,7 @@
 
 .app__roadmap-header h2 {
     font-family: var(--title);
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
 }
 
@@ -100,7 +104,11 @@
 
 @media screen and (max-width: 600px) {
     .-roadmap .app__about-roadmap_header h2 {
-        font-size: 2.8rem;
+        font-size: 2rem;
         width: 100%;
+    }
+
+    .app__roadmap-header h2 {
+        font-size: 1.8rem;
     }
 }
