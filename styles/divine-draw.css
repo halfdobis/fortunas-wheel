@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     margin-top: -4rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
     min-height: 100vh;
     padding: 2rem 0;
     position: relative;
@@ -94,6 +94,22 @@
     text-align: center;
 }
 
+.app__divine-draw__scroll {
+    animation: bounce linear 3s infinite;
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    z-index: 9;
+    
+    align-items: center;
+    background-color: #293040;
+    border-radius: 50%;
+    display: flex;
+    height: 3.5rem;
+    justify-content: center;
+    width: 3.5rem;
+}
+
 /* history */
 .app__divine-draw__history {
     align-items: center;
@@ -101,6 +117,22 @@
     justify-content: center;
     margin-bottom: 2rem;
     padding: 4rem 0;
+}
+
+.app__divine-draw__history-content .app__divine-draw__history-top {
+    margin-bottom: 4.5rem;
+    text-align: center;
+}
+
+.app__divine-draw__history-top h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--subtitle);
+}
+
+
+.app__divine-draw__history-content {
+    width: 100%;
 }
 
 .app__divine-draw__history-container {
@@ -220,6 +252,57 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     gap: 1rem;
 }
 
+.app__divine-draw__history-empty {
+    width: 100%;
+}
+
+.app__divine-draw__history-empty h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: var(--subtitle);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.app__divine-draw__history-empty h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--subtitle);
+    margin: 0;
+}
+
+.app__divine-draw__history-empty p {
+    font-size: .875rem;
+    font-weight: 500;
+    font-family: var(--subtitle);
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.app__divine-draw__history-empty button {
+    border-radius: 133.333px;
+    border: none;
+    font-size: .875rem;
+    font-weight: 600;
+    font-family: var(--subtitle);
+    outline: none;
+    padding: .875rem 1.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.app__divine-draw__history-empty button:active {
+    transform: scale(1.12);
+}
+
+.app__divine-draw__history-empty div {
+    background-color: #293040;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 3rem 1rem;
+    text-align: center;
+    width: 768px;
+}
 
 /* HISTORY BODY */
 .app__divine-draw__history-body {
@@ -285,6 +368,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     text-align: right;
 }
 
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
 @media screen and (max-width: 960px) {
     .app__divine-draw__steps {
         grid-template-columns: repeat(2, 1fr);
@@ -299,5 +392,15 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
     .app__divine-draw__steps-container h2 {
         font-size: 2.5rem;
+    }
+
+    .app__divine-draw__header {
+        min-height: fit-content;
+        padding: 4rem .5rem;
+    }
+
+    .app__divine-draw__scroll {
+        left: 20px;
+        bottom: 20px;
     }
 }

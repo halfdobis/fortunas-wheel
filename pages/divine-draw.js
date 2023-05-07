@@ -1,11 +1,20 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
-import { BiArrowToRight, BiRightArrowAlt, BiLeftArrowAlt } from 'react-icons/bi'
+import { BiArrowToRight, BiRightArrowAlt, BiLeftArrowAlt } from 'react-icons/bi';
+import { BsArrowDown } from 'react-icons/bs';
+
 
 export default function DivineDraw() {
+  const ref = useRef(null);
   const [ round, set_round ] = useState(250);
   const handle_change = (e) => {
     set_round(e.target.value)
+  }
+
+  const handle_click = () => {
+    ref.current.scrollIntoView({
+      behaviour: "smooth"
+    })
   }
 
   const winning_balls = [
@@ -82,58 +91,89 @@ export default function DivineDraw() {
           </div>
           <button disabled={true}> Buy ticket </button>
           </div>
+
+          <div className="app__divine-draw__scroll">
+            <BsArrowDown 
+              size={32} 
+              color="#fff"
+              onClick={handle_click}
+            />
+          </div>
         </div>
 
         {/* HISTORY */}
-        <div className="app__divine-draw__history section__container">
-          <div className="app__divine-draw__history-container">
-            <div className="app__divine-draw__history-ticket">
-              <div className="ticket">
-                <p> winning numbers </p>
-                <div className="ticket__balls">
-                  { winning_balls.map(ball => (
-                    <div className="balls" key={ball.id}>
-                      <h3>{ ball.number }</h3>
+        <div className="app__divine-draw__history section__container" ref={ref}>
+          { false ? (
+            <div className="app__divine-draw__history-content">
+              <div className="app__divine-draw__history-top">
+                <h2> Finished Rounds </h2>
+              </div>
+              <div className="app__divine-draw__history-container">
+                <div className="app__divine-draw__history-ticket">
+                  <div className="ticket">
+                    <p> winning numbers </p>
+                    <div className="ticket__balls">
+                      { winning_balls.map(ball => (
+                        <div className="balls" key={ball.id}>
+                          <h3>{ ball.number }</h3>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="app__divine-draw__history-header">
-              <div className="app__divine-draw__history-header__left">
-                <div className="app__divine-draw__history-round"> 
-                  <span> Round </span>
-                  <input 
-                    disabled={round >= 250 ? true : false}
-                    min={1}
-                    max={round}
-                    onChange={handle_change}
-                    type="number"
-                  />
+                <div className="app__divine-draw__history-header">
+                  <div className="app__divine-draw__history-header__left">
+                    <div className="app__divine-draw__history-round"> 
+                      <span> Round </span>
+                      <input 
+                        disabled={round >= 250 ? true : false}
+                        min={1}
+                        max={round}
+                        onChange={handle_change}
+                        type="number"
+                      />
+                    </div>
+                    <p> Drawn Jan 30, 2023, 5:00 PM </p>
+                  </div>
+                  <div className="app__divine-draw__history-header__right">
+                    <BiLeftArrowAlt />
+                    <BiRightArrowAlt />
+                    <BiArrowToRight />
+                  </div>
                 </div>
-                <p> Drawn Jan 30, 2023, 5:00 PM </p>
+                <div className="app__divine-draw__history-body">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th> Wallet ID </th>
+                        <th className='ticket-box'> ticket </th>
+                        <th> Match </th>
+                        <th> Prize </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div className="app__divine-draw__history-Footer"> Footer </div>
               </div>
-              <div className="app__divine-draw__history-header__right">
-                <BiLeftArrowAlt />
-                <BiRightArrowAlt />
-                <BiArrowToRight />
+            </div> 
+          ) : (
+            <div className="app__divine-draw__history-empty">
+              <h2> Finished Rounds </h2>
+              <div>
+                <h3> No Draws Yet </h3>
+
+                <p> Connect Wallet to buy tickets or check your history. </p>
+                <button> Connect Wallet </button>
+                <p> </p>
               </div>
             </div>
-            <div className="app__divine-draw__history-body">
-              <table>
-                <thead>
-                  <tr>
-                    <th> Name </th>
-                    <th className='ticket-box'> ticket </th>
-                    <th> Match </th>
-                    <th> Prize </th>
-                  </tr>
-                </thead>
-              </table>
-            </div>
-            <div className="app__divine-draw__history-Footer"> Footer </div>
+          )}
           </div>
-        </div>
 
         {/* STEPS TO EARN */}
         <div className="app__divine-draw__steps-container section__container">
