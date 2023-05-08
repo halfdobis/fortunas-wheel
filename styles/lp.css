@@ -261,6 +261,10 @@
     .app__lp-howtoplay_content {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .app__lp-about {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 560px) {
