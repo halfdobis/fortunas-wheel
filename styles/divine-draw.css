@@ -382,6 +382,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     .app__divine-draw__steps {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .app__divine-draw__history-empty {
+        padding: 0 1rem;
+    }
+
+    .app__divine-draw__history-empty div {
+        width: 100%
+    }
 }
 
 @media screen and (max-width: 600px) {
