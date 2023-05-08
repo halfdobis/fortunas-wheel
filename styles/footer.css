@@ -154,3 +154,14 @@
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+@media screen and (max-width: 460px) {
+    .app__footer-icons {
+        flex-wrap: wrap;
+    }
+
+    .app__footer-icon a {
+        display: inline-block;
+        position: relative;
+    }
+}

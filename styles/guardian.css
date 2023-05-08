@@ -78,6 +78,23 @@
     margin-top: 2rem;
 }
 
+.app__guardian-btn button {
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    color: #293040;
+    font-family: var(--subtitle);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .625rem 2rem;
+}
+
+.app__guardian-btn button:disabled {
+    background-color: #e9eaeb;
+    color: #bdc2c4;
+    cursor:not-allowed;
+}
+
 .app__guardian-btn a {
     background-color: #fff;
     border: none;

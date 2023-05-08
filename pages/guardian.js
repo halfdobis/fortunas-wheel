@@ -33,9 +33,7 @@ export default function Guardian() {
 
         <div className="app__guardian-btns">
           <div className="app__guardian-btn">
-            <Link href="/about">
-              <span> About Fortuna Guardian </span>
-            </Link>
+            <button disabled={true}> Become A Guardian </button>
           </div>
         </div>
 
