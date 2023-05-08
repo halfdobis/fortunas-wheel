@@ -88,6 +88,15 @@
     margin-bottom: 4rem;
 }
 
+.-item1, .-item2, .-item3, .-item4 {
+    transition: all .35s ease-in-out;
+}
+
+.-item1:hover, .-item2:hover, .-item3:hover, .-item4:hover {
+    rotate: 0deg;
+    transform: scale(1.08);
+}
+
 .-item1 {
     rotate: -5deg;
 }
