@@ -81,13 +81,13 @@ function Footer() {
                 <h2> Join Our Community </h2>
                 <div className="app__footer-icons">
                     <div className="app__footer-icon">
-                        <a href="/">
+                        <a href="https://twitter.com/Divine_Draw" target='_blank'>
                             <span> Twitter </span>
                             <RiArrowRightUpLine color="#000" />
                         </a>
                     </div>
                     <div className="app__footer-icon">
-                        <a href="/">
+                        <a href="/" target='_blank'>
                             <span> Discord </span>
                             <RiArrowRightUpLine color="#000" />
                         </a>
