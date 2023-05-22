@@ -25,7 +25,7 @@ function Footer() {
             </div>
             <div className="app__footer-row -links">
                 <div className="escorts__footer-text">
-                    <h3> Fortuna NFT <br /> The goddess of luck. </h3>
+                    <h3> Fortuna's Wheel. <br /> The goddess of luck. </h3>
                 </div>
                 <div className="app__footer-links_grid">
                     <ul className="app__footer-link">

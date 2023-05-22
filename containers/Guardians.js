@@ -10,7 +10,7 @@ function Guardians() {
     <div className="app__lp-guardians section__container">
         <div className="app__lp-guardians_container">
             <div className="app__lp-guardians_header">
-                <h2> The Fortuna NFT Guardian Collections </h2>
+                <h2> Fortuna's Guardians </h2>
             </div>
             <div className="app__lp-guardians_image">
                 { guardians.slice(0, 4).map((guardian, index) => (
