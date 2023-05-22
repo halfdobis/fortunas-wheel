@@ -15,7 +15,7 @@ export default function About() {
       <div className="app__about section__container">
         <div className="app__about-container">
             <div className="app__about-header">
-                <h2> About The <br /> FortunaNFT Realm </h2>
+                <h2> About <br /> Fortuna's Realm </h2>
             </div>
 
             <div className="app__about-row -about">
@@ -24,7 +24,7 @@ export default function About() {
                 </div>
                 <div className="app__about-col -right">
                     <div className="app__about-header">
-                        <h2> About The <br /> FortunaNFT Realm </h2>
+                        <h2> About <br /> Fortuna's Realm </h2>
                     </div>
                     <div className="app__about-fields">
                        { about.map((item, index) => (
@@ -40,7 +40,7 @@ export default function About() {
             <div className="app__about-row -story">
                 <div className="app__about-col -left">
                     <div className='app__about-story_header'>
-                        <h2> FortunaNFT Story </h2>
+                        <h2> Fortuna's Story </h2>
                     </div>
                     { story.map((story, index) => (
                         <div className="app__about-story_field" key={index}>
@@ -56,7 +56,7 @@ export default function About() {
             {/* Road Map */}
             <div className="app__about-row -roadmap">
                 <div className="app__about-roadmap_header">
-                    <h2> Follow the FortunaNFT Road Map </h2>
+                    <h2> Follow the Road Map </h2>
                 </div>
                 <div className="app__about-roadmap_body">
                     { roadmap.map(item => (

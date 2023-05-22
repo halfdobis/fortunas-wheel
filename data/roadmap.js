@@ -1,7 +1,7 @@
 const roadmap = [
     {
         id: 1,
-        "title": "FortunaNFT Launch",
+        "title": "Fortuna Launch",
         "maps": [
             "Launch of DivineDraw social media accounts and website,",
             "Building a community around the project and recruiting potential Guardians and Influencers,",

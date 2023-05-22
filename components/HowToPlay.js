@@ -14,7 +14,7 @@ function HowToPlay() {
     <div className="app__lp-howtoplay section__container">
         <div className="app__lp-howtoplay_container">
             <div className="app__lp-howtoplay_header">
-                <h2> How to participate in the Fortuna NFT Draw </h2>
+                <h2> How to participate in Fortuna's Divine Draw </h2>
             </div>
             <div className="app__lp-howtoplay_content">
                 { steps.map((step, index) => (
