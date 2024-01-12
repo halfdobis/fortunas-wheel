@@ -1,7 +1,9 @@
+"use client";
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 import logo from '../assets/images/logo.png';
@@ -15,7 +17,7 @@ const Menu = ({ handle_click}) => {
       <li onClick={handle_click}><Link href="/about" className={`${pathname === "/about" && "app__navbar-link__active"}`}> About </Link></li>
       <li onClick={handle_click}><Link href="/rules" className={`${pathname === "/rules" && "app__navbar-link__active"}`}> Rules </Link></li>
       <li onClick={handle_click}><Link href="/how-it-works"  className={`${pathname === "/how-it-works" && "app__navbar-link__active"}`}> How It Works </Link></li>
-      <li onClick={handle_click}><Link href="/divine-draw"  className={`app__navbar-btn ${pathname === "/divine-draw" && "app__navbar-link__active"}`}> Play now </Link></li>
+      {pathname === "/divine-draw" ? (<li><WalletMultiButton className="connect_wallet_size" /></li>): (<li onClick={handle_click}><Link href="/divine-draw"  className={`app__navbar-btn ${pathname === "/divine-draw" && "app__navbar-link__active"}`}> Play now </Link></li>)}
     </ul>
   )
 }

@@ -13,6 +13,7 @@ import '../styles/how-it-works.css';
 import '../styles/about.css';
 import '../styles/roadmap.css';
 import '../styles/divine-draw.css';
+import "../styles/connectWallet.css"
 
 export default function App({ Component, pageProps }) {
   return (
