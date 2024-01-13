@@ -1,40 +1,99 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
-import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
-import logo from '../assets/images/logo.png';
+import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+import logo from "../assets/images/logo.png";
 
-const Menu = ({ handle_click}) => {
+const Menu = ({ handle_click }) => {
   const { pathname } = useRouter();
-  return  (
+  return (
     <ul>
-      <li onClick={handle_click}><Link href="/" className={`${pathname === "/" && "app__navbar-link__active"}`}> Home </Link></li>
-      <li onClick={handle_click}><Link href="/guardian" className={`${pathname === "/guardian" && "app__navbar-link__active"}`}> Guardian </Link></li>
-      <li onClick={handle_click}><Link href="/about" className={`${pathname === "/about" && "app__navbar-link__active"}`}> About </Link></li>
-      <li onClick={handle_click}><Link href="/rules" className={`${pathname === "/rules" && "app__navbar-link__active"}`}> Rules </Link></li>
-      <li onClick={handle_click}><Link href="/how-it-works"  className={`${pathname === "/how-it-works" && "app__navbar-link__active"}`}> How It Works </Link></li>
-      {pathname === "/divine-draw" ? (<li><WalletMultiButton className="connect_wallet_size" /></li>): (<li onClick={handle_click}><Link href="/divine-draw"  className={`app__navbar-btn ${pathname === "/divine-draw" && "app__navbar-link__active"}`}> Play now </Link></li>)}
+      <li onClick={handle_click}>
+        <Link
+          href="/"
+          className={`${pathname === "/" && "app__navbar-link__active"}`}
+        >
+          {" "}
+          Home{" "}
+        </Link>
+      </li>
+      <li onClick={handle_click}>
+        <Link
+          href="/guardian"
+          className={`${
+            pathname === "/guardian" && "app__navbar-link__active"
+          }`}
+        >
+          {" "}
+          Guardian{" "}
+        </Link>
+      </li>
+      <li onClick={handle_click}>
+        <Link
+          href="/about"
+          className={`${pathname === "/about" && "app__navbar-link__active"}`}
+        >
+          {" "}
+          About{" "}
+        </Link>
+      </li>
+      <li onClick={handle_click}>
+        <Link
+          href="/rules"
+          className={`${pathname === "/rules" && "app__navbar-link__active"}`}
+        >
+          {" "}
+          Rules{" "}
+        </Link>
+      </li>
+      <li onClick={handle_click}>
+        <Link
+          href="/how-it-works"
+          className={`${
+            pathname === "/how-it-works" && "app__navbar-link__active"
+          }`}
+        >
+          {" "}
+          How It Works{" "}
+        </Link>
+      </li>
+      {pathname === "/divine-draw" ? (
+        <li>
+          <WalletMultiButton className="app__navbar-btn" />
+        </li>
+      ) : (
+        <li onClick={handle_click}>
+          <Link
+            href="/divine-draw"
+            className={`app__navbar-btn ${
+              pathname === "/divine-draw" && "app__navbar-link__active"
+            }`}
+          >
+            {" "}
+            Play now{" "}
+          </Link>
+        </li>
+      )}
     </ul>
-  )
-}
-
+  );
+};
 
 export default function Navbar() {
-  const [ toggle_menu, set_toggle_menu ] = useState(false);
-  useEffect(()=> {
+  const [toggle_menu, set_toggle_menu] = useState(false);
+  useEffect(() => {
     const nav = document.querySelector(".app__navbar");
-    window.addEventListener("scroll", (e)=> {
-      if(window.scrollY >= 70){
+    window.addEventListener("scroll", (e) => {
+      if (window.scrollY >= 70) {
         nav.classList.add("appear");
       } else {
         nav.classList.remove("appear");
       }
-    })
-  },[])
+    });
+  }, []);
 
   return (
     <nav className="app__navbar">
@@ -49,25 +108,29 @@ export default function Navbar() {
         </div>
 
         <div className="app__navbar-container__btns">
-          { toggle_menu ? <RiCloseLine 
-              color='#fff'
+          {toggle_menu ? (
+            <RiCloseLine
+              color="#fff"
               size={27}
-              onClick={()=> set_toggle_menu(false)}
-          /> : <RiMenu3Line 
-              color='#fff'
+              onClick={() => set_toggle_menu(false)}
+            />
+          ) : (
+            <RiMenu3Line
+              color="#fff"
               size={27}
-              onClick={()=> set_toggle_menu(true)}
-          />}
+              onClick={() => set_toggle_menu(true)}
+            />
+          )}
 
-          { toggle_menu && (
+          {toggle_menu && (
             <div className="app__navbar-mobile__menu scale-up-center">
-                <div className="app__navbar-mobile__menu-container">
-                  <Menu handle_click={()=> set_toggle_menu(false)} />
-                </div>
+              <div className="app__navbar-mobile__menu-container">
+                <Menu handle_click={() => set_toggle_menu(false)} />
+              </div>
             </div>
           )}
         </div>
       </div>
     </nav>
-  )
+  );
 }
