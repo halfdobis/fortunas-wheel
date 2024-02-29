@@ -36,7 +36,7 @@ export default function DivineDraw() {
   const [days, set_days] = useState(0);
   const [hours, set_hours] = useState(0);
   const [minutes, set_minutes] = useState(0);
-  var countDownDate = new Date("Feb 20, 2024 00:00:00").getTime();
+  var countDownDate = new Date("Mar 30, 2024 00:00:00").getTime();
 
   useEffect(() => {
     // Update the count down every 1 second
