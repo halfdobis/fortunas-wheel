@@ -9,7 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.1",
+    "@particle-network/auth": "^1.2.2",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.34",
+    "@solana/wallet-adapter-wallets": "^0.19.25",
+    "@solana/web3.js": "^1.89.0",
     "eslint-config-next": "^14.0.4",
     "gsap": "^3.11.4",
     "next": "^14.0.4",

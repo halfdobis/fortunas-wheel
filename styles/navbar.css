@@ -1,107 +1,139 @@
-
 .app__navbar {
-    align-items: center;
-    background-color: inherit;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: center;
-    height: 5rem;
-    left: 0;
-    position: fixed;
-    top: 0;
-    transition: all ease 300ms;
-    width: 100%;
-    z-index: 10;
+  align-items: center;
+  background-color: inherit;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  height: 5rem;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: all ease 300ms;
+  width: 100%;
+  z-index: 10;
 }
 .app__navbar.appear {
-    background-color: #0C0813;
-    border-bottom: 1px solid #293040;
+  background-color: #0c0813;
+  border-bottom: 1px solid #293040;
 }
 
 .app__navbar-container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 1.5rem ;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  width: 100%;
 }
 
 .app__navbar-container__logo {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .app__navbar-container__links ul {
-    align-items: center;
-    display: flex;
-    gap: 2rem 2rem;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  gap: 2rem 2rem;
+  width: 100%;
+}
+
+.wallet-adapter-dropdown-list {
+  display: grid !important;
+  gap: 0 !important;
+}
+
+.wallet-adapter-dropdown-list-item {
+  padding: 0;
 }
 
 .app__navbar-container a {
-    color: gray;
-    font-family: var(--subtitle);
-    font-size: .875em;
-    font-weight: 500;
-    transition: all 300ms ease-in;
+  color: gray;
+  font-family: var(--subtitle);
+  font-size: 0.875em;
+  font-weight: 500;
+  transition: all 300ms ease-in;
 }
 
 .app__navbar-container .app__navbar-container__links a:hover {
-    color: #fff;
+  color: #fff;
 }
 
-.app__navbar-container__links  a.app__navbar-link__active {
-    color: #fff;
+.app__navbar-container__links a.app__navbar-link__active {
+  color: #fff;
 }
 
 .app__navbar-container__btns {
-    display: none;
+  display: none;
 }
 
 .app__navbar-mobile__menu {
-    align-items: flex-end;
-    background-color: #1A1D24;
-    background-color: #0C0813;
-    box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    box-shadow: 0 0 5 rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-top: 1rem;
-    min-width: 210px;
-    padding: 2rem;
-    position: absolute;
-    right: 10px;
-    top: 40px;
+  align-items: flex-end;
+  background-color: #1a1d24;
+  background-color: #0c0813;
+  box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  min-width: 210px;
+  padding: 2rem;
+  position: absolute;
+  right: 10px;
+  top: 40px;
 }
 .app__navbar-mobile__menu li {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .app__navbar-btn {
-    background-color: #fff;
-    border-radius: .675rem;
-    color: #000 !important;
-    padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 0.675rem;
+  color: #000 !important;
+  padding: 0.5rem 1rem;
 }
 
 .app__navbar-btn:hover {
-    background-color: #293040;
-    color: #fff !important;
+  background-color: #293040;
+  color: #fff !important;
 }
 
-.app__navbar-btn.app__navbar-link__active {
-    background-color: #293040;
-    text-decoration: line-through;
+/* .app__navbar-btn.app__navbar-link__active {
+  background-color: #293040;
+  text-decoration: line-through;
+} */
+
+.wallet-adapter-button-trigger {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  transition: all 300ms ease-in;
+}
+
+.wallet-adapter-button-trigger:hover {
+  color: #fff !important;
+}
+
+.wallet-adapter-button {
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 600;
+  line-height: 48px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.675rem;
 }
 
 @media screen and (max-width: 768px) {
-    .app__navbar-container__links ul {
-        display: none;
-    }
-    .app__navbar-container__btns {
-        display: flex;
-    }
+  .app__navbar-container__links ul {
+    display: none;
+  }
+  .app__navbar-container__btns {
+    display: flex;
+  }
+  .wallet-adapter-dropdown-list-item {
+    padding: 0 20px;
+  }
 }
-
