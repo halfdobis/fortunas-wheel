@@ -196,7 +196,7 @@ export default function DivineDraw() {
               <p>
                 {" "}
                 Prices are set when the round starts, buy your ticket for just
-                $50.00. The more tickets you buy, the higher chances of winning.
+                $20.00. The more tickets you buy, the higher chances of winning.
               </p>
             </div>
             <div className="app__divine-draw__step">

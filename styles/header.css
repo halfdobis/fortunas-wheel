@@ -1,23 +1,23 @@
 .app__header {
-  align-items: center;
-  background-image: url("../assets/images/Fortuna.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  min-height: 100vh;
+  min-height: 70vh;
   justify-content: center;
   margin-top: -4rem;
-  margin-bottom: 3.5rem;
   overflow: hidden;
-  padding: 6rem 2rem 4rem;
   position: relative;
   width: 100%;
 }
 
+.app__header__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .app__header-overlay {
   background-color: rgba(0, 0, 0, 0.65);
-  padding: 6rem 2rem 4rem;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -25,13 +25,12 @@
   top: 0;
   width: 100%;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app__header-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100%;
   z-index: 2;
 }
 
@@ -69,7 +68,6 @@
 .app__header-text a {
   background-color: #fff;
   border: 1px solid #293040;
-  border: none;
   border-radius: 2rem;
   color: #000000;
   font-size: 1.1rem;
@@ -97,7 +95,7 @@
 
 @media screen and (max-width: 956px) {
   .app__header {
-    min-height: max-content;
+    min-height: auto;
     padding: 10rem 2rem 7rem;
   }
 
