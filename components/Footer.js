@@ -86,8 +86,8 @@ function Footer() {
               </a>
             </div>
             <div className="app__footer-icon">
-              <a href="/" target="_blank">
-                <span> Discord </span>
+              <a href="https://t.me/divinedraw" target="_blank">
+                <span> Telegram </span>
                 <RiArrowRightUpLine color="#000" />
               </a>
             </div>
