@@ -1,205 +1,207 @@
 .app__about {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .app__about-container__field {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .app__about-container__header h2 {
-    font-family: var(--title);
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 2.5rem;
-    text-align: center;
+  font-family: var(--title);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 .app__about-container__field p {
-    font-family: var(--subtitle);
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 300;
+  font-family: var(--subtitle);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
 }
 .app__about-container__field a {
-    color: #fff;
+  color: #fff;
 }
 
 .app__about-container__button button {
-    border: none;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    font-weight: 500;
-    outline: none;
-    padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  padding: 1rem 3rem;
 }
 
 .app__about-container__link {
-    margin-top: 4rem;
-    text-align: center;
+  margin-top: 4rem;
+  text-align: center;
 }
 .app__about-container__field a {
-    background-color: #fff;
-    border: none;
-    border-radius: 2rem;
-    color: #000000;
-    font-size: 1.4rem;
-    font-weight: 600;
-    font-family: var(--title);
-    outline: none;
-    padding: 1rem 2rem;
-    transition: all 250ms ease-in;
+  background-color: #fff;
+  border: none;
+  border-radius: 2rem;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: var(--title);
+  outline: none;
+  padding: 1rem 2rem;
+  transition: all 250ms ease-in;
 }
 .app__about-container__field a:hover {
-    background-color: #293040;
-    color: #fff;
+  background-color: #293040;
+  color: #fff;
 }
-
 
 /* About Page */
 
-
 .app__about-row.-about {
-    margin-bottom: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .app__about-header h2 {
-    display: none;
-    font-size: 3.5rem;
-    font-family: var(--title);
-    margin-bottom: 2rem;
+  display: none;
+  font-size: 3.5rem;
+  font-family: var(--title);
+  color: var(--yellow);
+  margin-bottom: 2rem;
 }
 
 .app__about-row .app__about-header h2 {
-    display: block;
+  display: block;
 }
 
-.app__about-row.-about, .app__about-row.-story {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-    position: relative;
+.app__about-row.-about,
+.app__about-row.-story {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  position: relative;
 }
 
 .app__about-row.-about .app__about-col.-right,
 .app__about-row.-story .app__about-col.-left {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-.app__about-header, .app__about-story_header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
+.app__about-header,
+.app__about-story_header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
 }
 
 .app__about-col img {
-    width: 447px;
-    height: auto;
-    border-radius: 3rem;
-    position: sticky;
-    top: 0;
+  width: 447px;
+  height: auto;
+  border-radius: 3rem;
+  position: sticky;
+  top: 0;
 }
 
 .app__about-field {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .app__about-field p {
-    font-family: var(--subtitle);
-    font-size: .75rem;
-    font-weight: 400;
+  font-family: var(--subtitle);
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .btn {
-    background-color: #fff ;
-    color: #000000;
-    font-size: .875rem;
-    font-family: var(--subtitle);
-    font-weight: 500;
-    display: inline-block;
-    float: right;
-    padding: .75rem 1rem;
-    border-radius: 1rem;
-    position: relative;
+  background-color: #fff;
+  color: #000000;
+  font-size: 0.875rem;
+  font-family: var(--subtitle);
+  font-weight: 500;
+  display: inline-block;
+  float: right;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  position: relative;
 }
-
 
 /* Story */
 .app__about-row.-story {
-    margin-bottom: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .app__about-story_header h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    font-family: var(--title);
-    margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: var(--title);
+  color: var(--yellow);
+  margin-bottom: 2rem;
 }
 
 .app__about-story_field p {
-    font-size: .75rem;
-    font-weight: 400;
-    font-family: var(--subtitle);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: var(--subtitle);
 }
 
 .app__about-story_field {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .app__about-story_field:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 956px) {
-    .app__about-col img {
-        width: 360px;
-    }
+  .app__about-col img {
+    width: 360px;
+  }
 }
 
 @media screen and (max-width: 824px) {
-    .app__about {
-        padding: 3rem 1.5rem 0;
-    }
+  .app__about {
+    padding: 3rem 1.5rem 0;
+  }
 
-    .app__about-row.-about, .app__about-row.-story {
-        flex-direction: column;
-    }
+  .app__about-row.-about,
+  .app__about-row.-story {
+    flex-direction: column;
+  }
 
-    .app__about-row.-story .app__about-col img {
-        display: none;
-    }
+  .app__about-row.-story .app__about-col img {
+    display: none;
+  }
 
-    .app__about-header {
-        margin-top: 0;
-    }
+  .app__about-header {
+    margin-top: 0;
+  }
 
-    .app__about-col img {
-        display: none;
-    }
+  .app__about-col img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 560px) {
-    .app__about {
-        padding: 2rem 1.5rem;
-    }
-    .app__about-container__header h2 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    .app__about-container__field p {
-        font-size: .875rem;
-    }
+  .app__about {
+    padding: 2rem 1.5rem;
+  }
+  .app__about-container__header h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .app__about-container__field p {
+    font-size: 0.875rem;
+  }
 
-    .app__about-col img {
-        display: block;
-        width: 100%;
-    }
+  .app__about-col img {
+    display: block;
+    width: 100%;
+  }
 
-    .app__about-header h2 {
-        display: block;
-    }
+  .app__about-header h2 {
+    display: block;
+  }
 
-    .app__about-row .app__about-header h2 {
-        display: none;
-    }
+  .app__about-row .app__about-header h2 {
+    display: none;
+  }
 }

@@ -151,7 +151,7 @@ export default function DivineDraw() {
                         type="number"
                       />
                     </div>
-                    <p> Drawn Jan 30, 2023, 5:00 PM </p>
+                    <p> Drawn Feb 30, 2024, 5:00 PM </p>
                   </div>
                   <div className="app__divine-draw__history-header__right">
                     <BiLeftArrowAlt />
@@ -164,8 +164,8 @@ export default function DivineDraw() {
                     <thead>
                       <tr>
                         <th> Wallet ID </th>
-                        <th className="ticket-box"> ticket </th>
-                        <th> Match </th>
+                        <th className="ticket-box"> Tickets </th>
+                        <th> Winner No. </th>
                         <th> Prize </th>
                       </tr>
                     </thead>
@@ -176,7 +176,7 @@ export default function DivineDraw() {
                     </tbody>
                   </table>
                 </div>
-                <div className="app__divine-draw__history-Footer"> Footer </div>
+                <div className="app__divine-draw__history-Footer"> </div>
               </div>{" "}
             </div>
           ) : toggle === "history" ? (

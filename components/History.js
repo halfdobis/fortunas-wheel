@@ -4,11 +4,8 @@ const History = () => {
       <table>
         <thead>
           <tr>
-            <th> Type </th>
-            <th> Stake </th>
-            <th> Wins </th>
-            <th> Numbers </th>
-            <th> Results </th>
+            <th> Date </th>
+            <th> Wallet ID </th>
             <th> Time </th>
             <th> Status </th>
           </tr>

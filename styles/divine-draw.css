@@ -83,6 +83,8 @@
 
 .countdown h2 {
   font-family: var(--subtitle);
+  color: var(--yellow);
+
   font-size: 2rem;
   font-weight: 500;
 }
@@ -375,6 +377,7 @@ input::-webkit-inner-spin-button {
 
 .app__divine-draw__steps-container h2 {
   font-family: var(--title);
+  color: var(--yellow);
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 3rem;
@@ -390,6 +393,7 @@ input::-webkit-inner-spin-button {
 
 .app__divine-draw__step h3 {
   font-family: var(--title);
+  color: var(--dark-yellow);
   font-size: 2rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
