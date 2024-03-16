@@ -1,289 +1,293 @@
-
-
 /* About Section */
 .app__lp-about {
-    padding: 4rem 0 0;
-    margin-bottom: 7.5rem;
+  padding: 4rem 0 0;
+  margin-bottom: 7.5rem;
 }
 
 .app__lp-about_header {
-    margin: auto;
-    width: 85%;
+  margin: auto;
+  width: 85%;
 }
 
 .app__lp-about_header h2 {
-    font-size: 4rem;
-    font-family: var(--title);
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-.app__lp-about_content {
-    margin: auto;
-    width: 85%;
+  font-size: 4rem;
+  font-family: var(--title);
+  color: var(--yellow);
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
-.app__lp-about_row {
+.app__lp-about_content {
+  margin: auto;
+  width: 85%;
 }
 
 .app__lp-about_col h2 {
-    font-size: 4rem;
-    font-weight: 600;
-    font-family: var(--title);
-    margin-bottom: 2.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: var(--title);
+  margin-bottom: 2.5rem;
 }
 
 .app__lp-about p {
-    font-family: var(--subtitle);
-    font-size: .875rem;
-    margin-bottom: 1.5rem;
+  font-family: var(--subtitle);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--light-grey);
 }
 
 .app__lp-about_link {
-    text-align: left;
-    margin-top: 2rem;
-
+  text-align: left;
+  margin-top: 2rem;
 }
 
 .app__lp-about_link a {
-    /* border-radius: 1rem; */
-    /* border: 1px solid #293040; */
-    color: #fff;
-    font-family: var(--subtitle);
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: underline;
-    transition: all .5s ease-in-out;
+  /* border-radius: 1rem; */
+  /* border: 1px solid #293040; */
+  color: var(--yellow);
+  font-family: var(--subtitle);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
 }
 
 .app__lp-about_link a:hover {
-    background-color: #293040;
+  background-color: #293040;
 }
 
 /* Guardians */
 
 .app__lp-guardians {
-    margin-bottom: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .app__lp-guardians_container {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .app__lp-guardians_header h2 {
-    font-family: var(--title);
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 2.7rem;
-    margin: auto;
-    margin-bottom: 2.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    width: 600px;
+  font-family: var(--title);
+  color: var(--yellow);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 600px;
 }
 
 .app__lp-guardians_image {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 4rem;
 }
 
-.-item1, .-item2, .-item3, .-item4 {
-    transition: all .35s ease-in-out;
+.-item1,
+.-item2,
+.-item3,
+.-item4 {
+  transition: all 0.35s ease-in-out;
 }
 
-.-item1:hover, .-item2:hover, .-item3:hover, .-item4:hover {
-    rotate: 0deg;
-    transform: scale(1.08);
+.-item1:hover,
+.-item2:hover,
+.-item3:hover,
+.-item4:hover {
+  rotate: 0deg;
+  transform: scale(1.08);
 }
 
 .-item1 {
-    rotate: -5deg;
+  rotate: -5deg;
 }
 
 .-item2 {
-    rotate: -4deg;
+  rotate: -4deg;
 }
 
 .-item3 {
-    rotate: 4deg;
+  rotate: 4deg;
 }
 
 .-item4 {
-    rotate: 5deg;
+  rotate: 5deg;
 }
 
 .app__lp-guardians_btns {
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 2rem;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .app__lp-guardians_btn a {
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    color: #000000;
-    border-radius: 2rem;
-    font-size: .875rem;
-    font-weight: 600;
-    font-family: var(--subtitle);
-    margin-top: 1rem;
-    outline: none;
-    padding: 1rem 1.5rem;
-    min-width: 180px;
-    white-space: nowrap;
-    transition: all 250ms ease-in;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--subtitle);
+  margin-top: 1rem;
+  outline: none;
+  padding: 1rem 1.5rem;
+  min-width: 180px;
+  white-space: nowrap;
+  transition: all 250ms ease-in;
 }
 
 .app__lp-guardians_btn a:hover {
-    border: 1px solid #fff;
-    background-color: #1A1D24;
-    color: #fff;
+  border: 1px solid #fff;
+  background-color: #1a1d24;
+  color: #fff;
 }
-
 
 /* How To Play */
 
 .app__lp-howtoplay {
-    margin-bottom: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .app__lp-howtoplay_container {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .app__lp-howtoplay_header h2 {
-    font-family: var(--title);
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 2.7rem;
-    margin: auto;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    width: 600px;
+  font-family: var(--title);
+  color: var(--yellow);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 600px;
 }
 
 .app__lp-howtoplay_header p {
-    font-family: var(--subtitle);
-    font-size: .875rem;
-    font-weight: 500;
-    margin: auto;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    width: 824px;
+  font-family: var(--subtitle);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 824px;
 }
 
 .app__lp-howtoplay_content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .app__lp-howtoplay_content .app__lp-howtoplay_card {
-    background-color: #293040;
-    border-radius: 1rem;
-    box-shadow: 0px 1px 2px rgba(255,255,255, 0.6);
-    padding: 1rem;
+  background-color: #293040;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.6);
+  padding: 1rem;
 }
 
-.app__lp-howtoplay_card h3{
-    font-family: var(--title);
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.app__lp-howtoplay_card h3 {
+  font-family: var(--title);
+  color: var(--dark-yellow);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .app__lp-howtoplay_card p {
-    font-family: var(--subtitle);
-    font-weight: 400;
-    font-size: .875rem;
+  font-family: var(--subtitle);
+  font-weight: 400;
+  font-size: 0.875rem;
 }
 
 .app__lp-howtoplay_card .app__lp-howtoplay_card-step {
-    font-family: var(--title);
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: .65rem;
+  font-family: var(--title);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.65rem;
 }
-
 
 /* FAQ */
 
 .app__lp-faq {
-    padding:0 2rem;
-    margin-bottom: 7.5rem;
+  padding: 0 2rem;
+  margin-bottom: 7.5rem;
 }
 
 .app__lp-faq_container {
-    margin: auto;
-    max-width: 824px;
+  margin: auto;
+  max-width: 824px;
 }
 
 .app__lp-faq_heading h2 {
-    font-family: var(--title);
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 2.7rem;
-    margin: auto;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: var(--title);
+  color: var(--yellow);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 .app__lp-faq_heading p {
-    color: #fff;
-    font-family: var(--subtitle);
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    text-align: center;
+  color: #fff;
+  font-family: var(--subtitle);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
 }
-
 
 @media screen and (max-width: 1024px) {
-    .app__lp-howtoplay_content {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .app__lp-howtoplay_content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
 @media screen and (max-width: 824px) {
-    .app__lp-guardians_image {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .app__lp-guardians_image {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .app__lp-faq {
-        padding: 3rem 1.5rem 0;
-    }
+  .app__lp-faq {
+    padding: 3rem 1.5rem 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .app__lp-guardians_header h2, .app__lp-howtoplay_header h2 {
-        font-size: 2.5rem;
-        width: 100%;
-    }
+  .app__lp-guardians_header h2,
+  .app__lp-howtoplay_header h2 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
 
-    .app__lp-howtoplay_content {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .app__lp-howtoplay_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    .app__lp-about {
-        padding: 0;
-    }
+  .app__lp-about {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 560px) {
-    .app__lp-faq_heading h2, 
-    .app__lp-guardians_header h2,
-    .app__lp-howtoplay_header h2 {
-        font-size: 2.2rem;
-        margin-bottom: 1.5rem;
-    }
-    .app__lp-faq_heading p {
-        font-size: .875rem;
-    }
+  .app__lp-faq_heading h2,
+  .app__lp-guardians_header h2,
+  .app__lp-howtoplay_header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .app__lp-faq_heading p {
+    font-size: 0.875rem;
+  }
 }

@@ -1,47 +1,48 @@
 .app__story {
-    padding: 4rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .app__story-container__field {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .app__story-container__header h2 {
-    font-family: var(--title);
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 2.5rem;
-    text-align: center;
+  font-family: var(--title);
+  color: var(--yellow);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 .app__story-container__field p {
-    font-family: var(--subtitle);
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 300;
+  font-family: var(--subtitle);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
 }
 .app__story-container__img video {
-    margin: auto;
-    width: 100%;
-    height: 100vh;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
 }
 
 @media screen and (max-width: 824px) {
-    .app__story {
-        padding: 3rem 1.5rem 0;
-    }
+  .app__story {
+    padding: 3rem 1.5rem 0;
+  }
 }
 
 @media screen and (max-width: 560px) {
-    .app__story {
-        padding: 2rem 1.5rem;
-    }
-    .app__story-container__header h2 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    .app__story-container__field p {
-        font-size: .875rem;
-    }
-    .app__story-container__img video {
-        height: 50vh;
-    }
+  .app__story {
+    padding: 2rem 1.5rem;
+  }
+  .app__story-container__header h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .app__story-container__field p {
+    font-size: 0.875rem;
+  }
+  .app__story-container__img video {
+    height: 50vh;
+  }
 }

@@ -47,7 +47,7 @@
 }
 
 .app__navbar-container a {
-  color: gray;
+  color: var(--grey);
   font-family: var(--subtitle);
   font-size: 0.875em;
   font-weight: 500;
@@ -55,11 +55,12 @@
 }
 
 .app__navbar-container .app__navbar-container__links a:hover {
-  color: #fff;
+  color: var(--yellow);
 }
 
 .app__navbar-container__links a.app__navbar-link__active {
-  color: #fff;
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
 }
 
 .app__navbar-container__btns {
@@ -88,15 +89,15 @@
 }
 
 .app__navbar-btn {
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 0.675rem;
-  color: #000 !important;
+  color: var(--black) !important;
   padding: 0.5rem 1rem;
 }
 
 .app__navbar-btn:hover {
   background-color: #293040;
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 /* .app__navbar-btn.app__navbar-link__active {

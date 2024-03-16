@@ -46,8 +46,9 @@
 }
 
 .app__header-text h2 {
-  color: #fff;
-  font-size: 3.5rem;
+  color: var(--yellow);
+  font-size: 4.5rem;
+  text-align: center;
   font-weight: 600;
   margin-bottom: 1rem;
   font-family: var(--title);
@@ -55,13 +56,16 @@
 .app__header-text p {
   color: #fff;
   font-size: 1rem;
+  text-align: center;
   font-weight: 500;
   margin-bottom: 2rem;
   font-family: var(--subtitle);
 }
 
 .app__header-btns {
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
   display: flex;
 }
 
