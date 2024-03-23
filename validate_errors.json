@@ -1,0 +1,150 @@
+[
+  {
+    "path": "assets\\25.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\26.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\37.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\27.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\38.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\28.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\29.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\39.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\30.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\02.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\31.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\40.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\32.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\04.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\33.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\41.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\05.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\06.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\34.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\42.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\07.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\35.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\43.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\08.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\36.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\44.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\09.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\20.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\46.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\21.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\47.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\48.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\45.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\22.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\23.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\24.json",
+    "error": "Name exceeds 32 chars."
+  },
+  {
+    "path": "assets\\49.json",
+    "error": "Name exceeds 32 chars."
+  }
+]

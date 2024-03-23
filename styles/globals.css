@@ -20,11 +20,25 @@
   text-decoration: none;
 }
 
-html,
-#__next {
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
   scroll-behavior: smooth;
   font-size: 100%;
   height: 100%;
+}
+
+html::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--dark-yellow);
+  border-radius: 30px;
 }
 
 body {
