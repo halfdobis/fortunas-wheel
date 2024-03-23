@@ -26,16 +26,68 @@ export default function DivineDraw() {
     set_round(e.target.value);
   };
 
-  const winning_balls = [
-    { id: 1, number: 5 },
-    { id: 2, number: 6 },
-    { id: 3, number: 0 },
-    { id: 4, number: 8 },
-    { id: 5, number: 4 },
-    { id: 6, number: 9 },
+  const winning_addresses = [
+    {
+      id: 1,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 25,
+      price: 2000,
+    },
+    {
+      id: 2,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 56,
+      price: 2000,
+    },
+    {
+      id: 3,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 78,
+      price: 2000,
+    },
+    {
+      id: 4,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 14,
+      price: 2000,
+    },
+    {
+      id: 5,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 20,
+      price: 2000,
+    },
+    {
+      id: 6,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 5,
+      price: 2000,
+    },
+    {
+      id: 7,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 8,
+      price: 2000,
+    },
+    {
+      id: 8,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 12,
+      price: 2000,
+    },
+    {
+      id: 9,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 30,
+      price: 2000,
+    },
+    {
+      id: 10,
+      wallet_address: "0xfdxffffffffffffffffffffffffffffffffffffffffffff",
+      tickets: 18,
+      price: 2000,
+    },
   ];
-
-  const top_winners = [{ id: 1, prize: "", match: "" }];
 
   useEffect(() => {
     const countDownDate = new Date("Mar 30, 2024 00:00:00").getTime();
@@ -127,18 +179,6 @@ export default function DivineDraw() {
           {toggle === "rounds" ? (
             <div className="app__divine-draw__history-content">
               <div className="app__divine-draw__history-container">
-                <div className="app__divine-draw__history-ticket">
-                  <div className="ticket">
-                    <p> winning numbers </p>
-                    <div className="ticket__balls">
-                      {winning_balls.map((ball) => (
-                        <div className="balls" key={ball.id}>
-                          <h3>{ball.number}</h3>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
                 <div className="app__divine-draw__history-header">
                   <div className="app__divine-draw__history-header__left">
                     <div className="app__divine-draw__history-round">
@@ -169,11 +209,39 @@ export default function DivineDraw() {
                         <th> Prize </th>
                       </tr>
                     </thead>
-                    <tbody>
+                    {/* <tbody>
                       <tr>
-                        <td> </td>
+                        <td>
+                          {winning_addresses.map((address) => (
+                            <div className="" key={address.id}>
+                              <h3>{address.wallet_address}</h3>
+                            </div>
+                          ))}
+                        </td>
+                        <td>
+                          {" "}
+                          {winning_addresses.map((address) => (
+                            <div className="" key={address.id}>
+                              <h3>{address.tickets}</h3>
+                            </div>
+                          ))}
+                        </td>
+                        <td>
+                          {winning_addresses.map((address) => (
+                            <div className="" key={address.id}>
+                              <h3>{address.id}</h3>
+                            </div>
+                          ))}
+                        </td>
+                        <td>
+                          {winning_addresses.map((address) => (
+                            <div className="" key={address.id}>
+                              <h3>{address.price}</h3>
+                            </div>
+                          ))}
+                        </td>
                       </tr>
-                    </tbody>
+                    </tbody> */}
                   </table>
                 </div>
                 <div className="app__divine-draw__history-Footer"> </div>
