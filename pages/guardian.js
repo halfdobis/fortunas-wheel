@@ -6,6 +6,7 @@ import guardian1 from "../assets/images/guardian1.jpeg";
 import guardian2 from "../assets/images/guardian2.jpeg";
 import guardian3 from "../assets/images/guardian3.jpeg";
 import guardian4 from "../assets/images/guardian4.png";
+import { CandyMint } from "../components/candyMint";
 
 export default function Guardian() {
   return (
@@ -39,9 +40,7 @@ export default function Guardian() {
         </div>
 
         <div className="app__guardian-btns">
-          <div className="app__guardian-btn">
-            <button disabled={true}> Become A Guardian </button>
-          </div>
+          <CandyMint/>
         </div>
 
         <div className="app__guardian-row -responsibilities">
