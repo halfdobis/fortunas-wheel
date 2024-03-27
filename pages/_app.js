@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Layout from "../containers/Layout";
+import { Toaster } from "react-hot-toast";
 import "../styles/layout.css";
 import "../styles/lp.css";
 import "../styles/navbar.css";
@@ -17,6 +18,7 @@ import "../styles/divine-draw.css";
 export default function App({ Component, pageProps }) {
   return (
     <Layout>
+      <Toaster />
       <Component {...pageProps} />
     </Layout>
   );
