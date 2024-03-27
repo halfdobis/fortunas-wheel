@@ -20,7 +20,8 @@ import { mplTokenMetadata } from "@metaplex-foundation/mpl-token-metadata";
 import { setComputeUnitLimit } from "@metaplex-foundation/mpl-toolbox";
 import { clusterApiUrl } from "@solana/web3.js";
 import * as bs58 from "bs58";
-import { toast } from "react-hot-toast";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 // These access the environment variables we defined in the .env file

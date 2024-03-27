@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Layout from "../containers/Layout";
-import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/layout.css";
 import "../styles/lp.css";
 import "../styles/navbar.css";
@@ -18,7 +19,17 @@ import "../styles/divine-draw.css";
 export default function App({ Component, pageProps }) {
   return (
     <Layout>
-      <Toaster />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+      />
       <Component {...pageProps} />
     </Layout>
   );
