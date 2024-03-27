@@ -21,6 +21,7 @@ import { setComputeUnitLimit } from "@metaplex-foundation/mpl-toolbox";
 import { clusterApiUrl } from "@solana/web3.js";
 import * as bs58 from "bs58";
 import { toast } from "react-hot-toast";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 // These access the environment variables we defined in the .env file
 const quicknodeEndpoint =
@@ -95,10 +96,11 @@ export const CandyMint = () => {
       {/* <p style={{ marginBottom: "0.5rem", textAlign: "center" }}>
         No NFTs left to mint
       </p> */}
-      <div className="app__guardian-btn">
-        <button disabled={false} onClick={onClick}>
+      <div className="app__guardian-btns">
+        <button className="app__guardian-btn" onClick={onClick}>
           Become A Guardian
         </button>
+        <WalletMultiButton className="app__guardian-btn" />
       </div>
     </div>
   );
