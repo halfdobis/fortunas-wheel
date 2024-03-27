@@ -78,6 +78,7 @@ export const CandyMint = () => {
             collectionUpdateAuthority: candyMachine.authority,
             mintArgs: {
               solPayment: some({ destination: treasury }),
+              mintLimit: some({ id: 1 }),
             },
           })
         );
