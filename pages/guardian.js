@@ -26,7 +26,7 @@ export default function Guardian() {
 
         <div className="app__guardian-grid">
           <div className="app__guardian-grid_item -item1">
-            <Image src={guardian1} alt="Fortuna Guardian" />
+            <Image src={guardian1} alt="Fortuna Guardian" priority />
           </div>
           <div className="app__guardian-grid_item -item2">
             <Image src={guardian2} alt="Fortuna Guardian" />
@@ -40,7 +40,7 @@ export default function Guardian() {
         </div>
 
         <div className="app__guardian-btns">
-          <CandyMint/>
+          <CandyMint />
         </div>
 
         <div className="app__guardian-row -responsibilities">

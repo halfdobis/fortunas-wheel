@@ -98,6 +98,7 @@
   background-color: #fff;
   border: none;
   border-radius: 2rem;
+  cursor: pointer;
   color: #293040;
   font-family: var(--subtitle);
   font-size: 1rem;
