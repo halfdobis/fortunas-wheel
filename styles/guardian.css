@@ -94,6 +94,15 @@
   margin-top: 2rem;
 }
 
+.nfts-left {
+  font-family: var(--subtitle);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .app__guardian-btn {
   border-radius: 0.675rem;
   border: none;
