@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { FC, useCallback, useMemo } from "react";
 // import { notify } from "../utils/notifications";
@@ -31,6 +32,7 @@ const candyMachineAddress = publicKey(process.env.NEXT_PUBLIC_CANDY_MACHINE_ID);
 const treasury = publicKey(process.env.NEXT_PUBLIC_TREASURY);
 
 export const CandyMint = () => {
+  const [totalNFTsLeft, setTotalNFTsLeft] = useState(0);
   const { connection } = useConnection();
   const wallet = useWallet();
 
@@ -50,6 +52,27 @@ export const CandyMint = () => {
       createUmi,
     ]
   );
+
+  useEffect(() => {
+    const fetchNFTsLeft = async () => {
+      if (!wallet.publicKey) return;
+
+      const candyMachine = await fetchCandyMachine(umi, candyMachineAddress);
+      const candyGuard = await safeFetchCandyGuard(
+        umi,
+        candyMachine.mintAuthority
+      );
+
+      // Fetch the total number of NFTs left to mint
+      const totalLeft = await umi.client
+        .state(candyGuard.publicKey)
+        .query.nftTotalLeft();
+
+      setTotalNFTsLeft(totalLeft);
+    };
+
+    fetchNFTsLeft();
+  }, [wallet, umi, candyMachineAddress]);
 
   //mint function
   const onClick = useCallback(async () => {
@@ -95,9 +118,13 @@ export const CandyMint = () => {
 
   return (
     <div>
-      {/* <p style={{ marginBottom: "0.5rem", textAlign: "center" }}>
-        No NFTs left to mint
-      </p> */}
+      <div className="nfts-left">
+        {totalNFTsLeft > 0 ? (
+          <p>Total NFTs left to mint: {totalNFTsLeft}</p>
+        ) : (
+          <p>No NFTs left to mint</p>
+        )}
+      </div>
       <div className="app__guardian-btns">
         <button className="app__guardian-btn" onClick={onClick}>
           Become A Guardian
