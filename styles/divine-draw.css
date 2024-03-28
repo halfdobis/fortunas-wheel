@@ -111,6 +111,49 @@
   justify-content: center;
   width: 3.5rem;
 }
+/* Ticket View */
+.app__divine-draw-ticket-view {
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  font-family: var(--subtitle);
+}
+
+.app__divine-draw-ticket-view img {
+  width: 500px;
+  height: 250px;
+}
+
+.app__divine-draw-ticket-view button {
+  border-radius: 133.333px;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--subtitle);
+  outline: none;
+  padding: 0.875rem 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.app__divine-draw-countdown {
+  margin-top: 20px;
+}
+
+.app__divine-draw-countdown p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.app__divine-draw-countdown-timer {
+  font-size: 24px;
+}
+
+.app__divine-draw-countdown-timer span {
+  margin: 0 5px;
+}
 
 /* history */
 .app__divine-draw__history {
@@ -367,6 +410,27 @@ input::-webkit-inner-spin-button {
   padding: 3rem 1rem;
   text-align: center;
   width: 768px;
+}
+
+/* Countdown Timer */
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.countdown .time {
+  margin: 0 10px;
+}
+
+.countdown .time h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.countdown p {
+  font-size: 14px;
 }
 
 /* HISTORY BODY */
