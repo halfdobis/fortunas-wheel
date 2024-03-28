@@ -6,15 +6,20 @@ import {
 } from "react-icons/bi";
 import { BsArrowDown } from "react-icons/bs";
 import History from "../components/History";
+import Image from "next/image";
+import Ticket1 from "../assets/images/Fortuna-ticket-0.jpg";
+import Ticket2 from "../assets/images/Fortuna-ticket-1.jpg";
 
 export default function DivineDraw() {
   const [toggle, setToggle] = useState("rounds");
-  const ref = useRef(null);
   const [round, setRound] = useState(250);
   const [seconds, setSeconds] = useState(0);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
+  const [showTicketView, setShowTicketView] = useState(false);
+
+  const ref = useRef(null);
 
   const handleScroll = () => {
     ref.current.scrollIntoView({
@@ -23,8 +28,73 @@ export default function DivineDraw() {
   };
 
   const handle_change = (e) => {
-    set_round(e.target.value);
+    setRound(e.target.value);
   };
+
+  useEffect(() => {
+    const countDownDate = new Date("Mar 31, 2024 00:00:00").getTime();
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      if (distance <= 0) {
+        clearInterval(interval);
+        setDays(0);
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
+        setShowTicketView(true);
+      } else {
+        setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
+        setHours(
+          Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+        );
+        setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+        setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (showTicketView) {
+      // Calculate the ticket countdown date (7 days from now)
+      const ticketCountDownDate = new Date();
+      ticketCountDownDate.setDate(ticketCountDownDate.getDate() + 7);
+      ticketCountDownDate.setHours(0, 0, 0, 0);
+      const ticketEndTime = ticketCountDownDate.getTime();
+
+      const ticketInterval = setInterval(() => {
+        const now = new Date().getTime();
+        const ticketDistance = ticketEndTime - now;
+
+        if (ticketDistance <= 0) {
+          clearInterval(ticketInterval);
+          // Handle what happens after the ticket countdown ends
+        } else {
+          const ticketDays = Math.floor(ticketDistance / (1000 * 60 * 60 * 24));
+          const ticketHours = Math.floor(
+            (ticketDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const ticketMinutes = Math.floor(
+            (ticketDistance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const ticketSeconds = Math.floor(
+            (ticketDistance % (1000 * 60)) / 1000
+          );
+
+          // Update state variables for the ticket countdown
+          setDays(ticketDays);
+          setHours(ticketHours);
+          setMinutes(ticketMinutes);
+          setSeconds(ticketSeconds);
+        }
+      }, 1000);
+
+      return () => clearInterval(ticketInterval);
+    }
+  }, [showTicketView]);
 
   const winning_addresses = [
     {
@@ -89,67 +159,58 @@ export default function DivineDraw() {
     },
   ];
 
-  useEffect(() => {
-    const countDownDate = new Date("Mar 30, 2024 00:00:00").getTime();
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = countDownDate - now;
-
-      if (distance <= 0) {
-        clearInterval(interval);
-        setDays(0);
-        setHours(0);
-        setMinutes(0);
-        setSeconds(0);
-      } else {
-        setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
-        setHours(
-          Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-        );
-        setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-        setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="app__divine-draw">
       <div className="app__divine-draw__container">
         <div className="app__divine-draw__header">
           <div className="app__divine-draw_overlay" />
-          <div className="app__divine-draw__header-container">
-            <h4> The Divine Draw </h4>
-            <h2> Tickets on sale soon </h2>
-            <div className="countdown">
-              <div className="days time">
-                <div>
-                  <h2> {days < 10 ? `0${days}` : days} </h2>
+          {showTicketView ? (
+            <div className="app__divine-draw-ticket-view">
+              <Image src={Ticket1} alt="Fortuna Ticket" />
+              <div className="app__divine-draw-countdown">
+                <button>Buy Ticket</button>
+                <p>Ticket Sales Countdown:</p>
+                <div className="app__divine-draw-countdown-timer">
+                  <span>{days < 10 ? `0${days}` : days}</span> :
+                  <span>{hours < 10 ? `0${hours}` : hours}</span> :
+                  <span>{minutes < 10 ? `0${minutes}` : minutes}</span> :
+                  <span>{seconds < 10 ? `0${seconds}` : seconds}</span>
                 </div>
-                <p> Days </p>
-              </div>
-              <div className="hours time">
-                <div>
-                  <h2> {hours < 10 ? `0${hours}` : hours} </h2>
-                </div>
-                <p> hours </p>
-              </div>
-              <div className="minutes time">
-                <div>
-                  <h2> {minutes < 10 ? `0${minutes}` : minutes} </h2>
-                </div>
-                <p> minutes </p>
-              </div>
-              <div className="seconds time">
-                <div>
-                  <h2> {seconds < 10 ? `0${seconds}` : seconds}</h2>
-                </div>
-                <p> seconds </p>
               </div>
             </div>
-            <button disabled={true}> Buy ticket </button>
-          </div>
+          ) : (
+            <div className="app__divine-draw__header-container">
+              <h4> The Divine Draw </h4>
+              <h2> Tickets on sale soon </h2>
+
+              <div className="countdown">
+                <div className="days time">
+                  <div>
+                    <h2> {days < 10 ? `0${days}` : days} </h2>
+                  </div>
+                  <p> Days </p>
+                </div>
+                <div className="hours time">
+                  <div>
+                    <h2> {hours < 10 ? `0${hours}` : hours} </h2>
+                  </div>
+                  <p> hours </p>
+                </div>
+                <div className="minutes time">
+                  <div>
+                    <h2> {minutes < 10 ? `0${minutes}` : minutes} </h2>
+                  </div>
+                  <p> minutes </p>
+                </div>
+                <div className="seconds time">
+                  <div>
+                    <h2> {seconds < 10 ? `0${seconds}` : seconds}</h2>
+                  </div>
+                  <p> seconds </p>
+                </div>
+              </div>
+            </div>
+          )}
 
           <div className="app__divine-draw__scroll">
             <BsArrowDown size={32} color="#fff" onClick={handleScroll} />
